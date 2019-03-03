@@ -23,7 +23,7 @@
           exact
         >
           <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon color="#00FFFF">{{ item.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title v-text="item.title" />
@@ -41,7 +41,7 @@
               icon
               @click.stop="miniVariant = !miniVariant"
             >
-              <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
+              <v-icon color="#CA2C92">{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
             </v-btn>
           </v-list-tile-action>
           <v-list-tile-content>
@@ -88,9 +88,9 @@ export default {
           to: '/'
         },
         {
-          icon: 'bubble_chart',
-          title: 'Panel de Usuario',
-          to: '/user'
+          icon: 'done_outline',
+          title: 'Prueba Notificacion',
+          to: '/inspire'
         }
       ],
       naviconfig: [
@@ -100,7 +100,7 @@ export default {
           task: 'miniVariant = !miniVariant'
         }
       ],
-      miniVariant: false,
+      miniVariant: true,
       right: true,
       rightDrawer: false,
       title: 'Vuetify.js'
