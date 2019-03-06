@@ -50,22 +50,23 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar
+    <v-toolbar-side-icon @click="drawer = !drawer" />
+
+    <!-- <v-toolbar
 
       fixed
       app
       class="bg"
     >
-      <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
         <nuxt-link to="/">
           <div v-if="drawer === false">
-            <img class="toolbartitle" src="~/assets/logo.png" height="64"></img>
+            <img class="toolbartitle" src="~/assets/logo2.png" height="64"></img>
           </div>
         </nuxt-link>
-      </v-toolbar-title>
+      </v-toolbar-title> -->
 
-      <v-spacer />
+    <v-spacer />
     </v-toolbar>
   </div>
 </template>
@@ -89,8 +90,8 @@ export default {
         },
         {
           icon: 'bubble_chart',
-          title: 'Panel de Usuario',
-          to: '/user'
+          title: 'Portafolio',
+          to: 'Portafolio'
         }
       ],
       naviconfig: [
@@ -112,13 +113,14 @@ export default {
 <style lang="css" scoped>
 .toolbartitle {
   padding-top: 10px;
+
 }
 .drawertitle {
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 10px;
 }
 .bg {
-  background-image: linear-gradient(45deg, #CA2C92, #8B008B, #00FFFF);
+  background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
 }
 .navdrawer {
   background-color: #CA2C92;
