@@ -8,12 +8,14 @@
       app
       class="navdrawer"
     >
-      <div v-if="miniVariant === false">
-        <img class="drawertitle" src="~/assets/logo.png" height="55"></img>
-      </div>
-      <div v-if="miniVariant === true" class="toolbartitle">
-        <WebiLogo />
-      </div>
+      <nuxt-link to="/">
+        <div v-if="miniVariant === false">
+          <img class="drawertitle" src="~/assets/logo2.png" height="55"></img>
+        </div>
+        <div v-if="miniVariant === true" class="toolbartitle">
+          <WebiLogo />
+        </div>
+      </nuxt-link>
       <v-list>
         <v-list-tile
           v-for="(item, i) in items"
@@ -50,23 +52,21 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar-side-icon @click="drawer = !drawer" />
-
-    <!-- <v-toolbar
-
+    <v-toolbar
       fixed
       app
       class="bg"
     >
+      <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
         <nuxt-link to="/">
           <div v-if="drawer === false">
             <img class="toolbartitle" src="~/assets/logo2.png" height="64"></img>
           </div>
         </nuxt-link>
-      </v-toolbar-title> -->
+      </v-toolbar-title>
 
-    <v-spacer />
+      <v-spacer />
     </v-toolbar>
   </div>
 </template>
@@ -80,18 +80,28 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: false,
+      drawer: true,
       fixed: false,
       items: [
         {
-          icon: 'apps',
+          icon: 'home',
           title: 'Welcome',
           to: '/'
         },
         {
-          icon: 'bubble_chart',
+          icon: 'stars',
           title: 'Portafolio',
-          to: 'Portafolio'
+          to: 'portafolio'
+        },
+        {
+          icon: 'offline_bolt',
+          title: 'Comando Ultimate',
+          to: 'comandoultimate'
+        },
+        {
+          icon: 'bubble_chart',
+          title: 'Inspire',
+          to: 'inspire'
         }
       ],
       naviconfig: [
@@ -101,10 +111,7 @@ export default {
           task: 'miniVariant = !miniVariant'
         }
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      miniVariant: true
     }
   }
 }

@@ -16,20 +16,13 @@
       <div>
         <img width="1200px" src="~/assets/bg-web.jpg">
       </div>
-
-      <Info />
       <Newslider />
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-import Info from '@/components/Info'
-export default {
-  components: {
-    Info
-  }
-}
+export default {}
 </script>
 
 <style >
