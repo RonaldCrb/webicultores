@@ -2,7 +2,7 @@
   <v-app dark>
     <NavBar />
     <v-content>
-        <nuxt />
+      <nuxt />
     </v-content>
   </v-app>
 </template>

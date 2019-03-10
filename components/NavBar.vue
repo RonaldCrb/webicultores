@@ -81,18 +81,18 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [
         {
-          icon: 'home',
-          title: 'Welcome',
-          to: '/'
+          icon: 'bubble_chart',
+          title: 'Arte',
+          to: 'arte'
         },
         {
-          icon: 'stars',
-          title: 'Portafolio',
-          to: 'portafolio'
+          icon: 'monetization_on',
+          title: 'Marketing',
+          to: 'marketing'
         },
         {
           icon: 'offline_bolt',
@@ -100,9 +100,9 @@ export default {
           to: 'comandoultimate'
         },
         {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: 'inspire'
+          icon: 'stars',
+          title: 'Portafolio',
+          to: 'portafolio'
         }
       ],
       naviconfig: [
