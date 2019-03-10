@@ -56,6 +56,7 @@
       fixed
       app
       class="bg"
+      height="70px"
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
