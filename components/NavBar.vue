@@ -25,7 +25,9 @@
           exact
         >
           <v-list-tile-action>
-            <v-icon color="#00FFFF">{{ item.icon }}</v-icon>
+            <v-icon color="#00FFFF">
+              {{ item.icon }}
+            </v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title v-text="item.title" />
@@ -43,7 +45,9 @@
               icon
               @click.stop="miniVariant = !miniVariant"
             >
-              <v-icon color="#CA2C92">{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
+              <v-icon color="#CA2C92">
+                {{ `chevron_${miniVariant ? 'right' : 'left'}` }}
+              </v-icon>
             </v-btn>
           </v-list-tile-action>
           <v-list-tile-content>

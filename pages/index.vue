@@ -1,10 +1,7 @@
 <template>
-  <v-container fluid>
-    <v-layout>
-      <v-flex xs12>
-        <img width="100%" src="~/assets/bg-web.jpg">
-      </v-flex>
-    </v-layout>
+  <div>
+    <BannerGiant />
+
     <v-layout row wrap>
       <v-flex xs12 class="hidden-sm-and-up">
         <TarjeteroMobile />
@@ -13,16 +10,18 @@
         <TarjeteroDesktop />
       </v-flex>
     </v-layout>
-  </v-container>
+  </div>
 </template>
 <script>
+import BannerGiant from '@/components/BannerGiant.vue'
 import TarjeteroDesktop from '@/components/TarjeteroDesktop.vue'
 import TarjeteroMobile from '@/components/TarjeteroMobile.vue'
 
 export default {
   components: {
     TarjeteroMobile,
-    TarjeteroDesktop
+    TarjeteroDesktop,
+    BannerGiant
   }
 }
 </script>
