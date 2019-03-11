@@ -85,23 +85,18 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'bubble_chart',
-          title: 'Arte',
+          icon: 'filter_vintage',
+          title: 'Arte!',
           to: 'arte'
         },
         {
-          icon: 'monetization_on',
-          title: 'Marketing',
+          icon: 'attach_money',
+          title: 'Marketing!',
           to: 'marketing'
         },
         {
-          icon: 'offline_bolt',
-          title: 'Comando Ultimate',
-          to: 'comandoultimate'
-        },
-        {
           icon: 'stars',
-          title: 'Portafolio',
+          title: 'Apps!',
           to: 'portafolio'
         }
       ],

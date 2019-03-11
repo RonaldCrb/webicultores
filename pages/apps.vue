@@ -1,14 +1,14 @@
 <template>
   <div>
-    <Newslider />
+    <Timeline />
   </div>
 </template>
 
 <script>
-import Newslider from '@/components/Newslider'
+import Timeline from '@/components/Timeline.vue'
 export default {
   components: {
-    Newslider
+    Timeline
   }
 }
 </script>

@@ -10,6 +10,7 @@
           sm6
           md3
           pa-1
+          ma-4
         >
           <nuxt-link :to="card.link">
             <v-card dark>
@@ -49,24 +50,17 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: 'bubble_chart',
+          icon: 'filter_vintage',
           title: 'Arte!',
           content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
         },
         {
-          color: '#5f2ae4',
+          color: '#3F51B5',
           icon: 'monetization_on',
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
-        },
-        {
-          color: '#04bbff',
-          icon: 'offline_bolt',
-          title: 'Ultimate!',
-          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
-          link: 'comandoultimate'
         },
         {
           color: '#04bbff',

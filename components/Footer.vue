@@ -4,31 +4,32 @@
     height="auto"
   >
     <v-card
-      class="flex"
       flat
       tile
+      class="indigo white--text text-xs-center"
     >
-      <v-card-title class="footerbg">
-        <strong class="subheading">Conecta con nuestras redes sociales!</strong>
-
-        <v-spacer />
-
+      <v-card-text>
         <v-btn
           v-for="icon in icons"
           :key="icon"
-          class="mx-3"
-          dark
+          class="mx-3 white--text"
           icon
         >
           <v-icon size="24px">
             {{ icon }}
           </v-icon>
         </v-btn>
-      </v-card-title>
+      </v-card-text>
 
-      <v-card-actions class="footeraccent justify-center">
-        &copy;2018 — <strong>Webicultores</strong>
-      </v-card-actions>
+      <v-card-text class="white--text pt-0">
+        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </v-card-text>
+
+      <v-divider />
+
+      <v-card-text class="white--text">
+        &copy;2018 — <strong>Vuetify</strong>
+      </v-card-text>
     </v-card>
   </v-footer>
 </template>
@@ -36,17 +37,7 @@
 <script>
 export default {
   data: () => ({
-    icons: ['public', 'people', 'whatshot', 'share']
+    icons: ['fab fa-facebook', 'fab fa-twitter']
   })
 }
 </script>
-
-<style media="screen">
-.footerbg {
-  background-color: #ff0375;
-}
-.footeraccent {
-  background-color: #04bbff;
-  color: black;
-}
-</style>
