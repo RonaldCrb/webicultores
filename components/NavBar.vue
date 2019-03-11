@@ -8,12 +8,14 @@
       app
       class="navdrawer"
     >
-      <div v-if="miniVariant === false">
-        <img class="drawertitle" src="~/assets/logo.png" height="55"></img>
-      </div>
-      <div v-if="miniVariant === true" class="toolbartitle">
-        <WebiLogo />
-      </div>
+      <nuxt-link to="/">
+        <div v-if="miniVariant === false">
+          <img class="drawertitle" src="~/assets/logo2.png" height="55"></img>
+        </div>
+        <div v-if="miniVariant === true" class="toolbartitle">
+          <WebiLogo />
+        </div>
+      </nuxt-link>
       <v-list>
         <v-list-tile
           v-for="(item, i) in items"
@@ -51,16 +53,16 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
-
       fixed
       app
       class="bg"
+      height="70px"
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
         <nuxt-link to="/">
           <div v-if="drawer === false">
-            <img class="toolbartitle" src="~/assets/logo.png" height="64"></img>
+            <img class="toolbartitle" src="~/assets/logo2.png" height="64"></img>
           </div>
         </nuxt-link>
       </v-toolbar-title>
@@ -83,14 +85,19 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'apps',
-          title: 'Welcome',
-          to: '/'
+          icon: 'filter_vintage',
+          title: 'Arte!',
+          to: 'arte'
         },
         {
-          icon: 'done_outline',
-          title: 'Prueba Notificacion',
-          to: '/inspire'
+          icon: 'attach_money',
+          title: 'Marketing!',
+          to: 'marketing'
+        },
+        {
+          icon: 'stars',
+          title: 'Apps!',
+          to: 'apps'
         }
       ],
       naviconfig: [
@@ -100,10 +107,7 @@ export default {
           task: 'miniVariant = !miniVariant'
         }
       ],
-      miniVariant: true,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      miniVariant: true
     }
   }
 }
@@ -112,13 +116,14 @@ export default {
 <style lang="css" scoped>
 .toolbartitle {
   padding-top: 10px;
+
 }
 .drawertitle {
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 10px;
 }
 .bg {
-  background-image: linear-gradient(45deg, #CA2C92, #8B008B, #00FFFF);
+  background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
 }
 .navdrawer {
   background-color: #CA2C92;
