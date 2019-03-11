@@ -19,14 +19,14 @@
               entendemos la importancia de una campana bien organizada con objetivos
               medibles, tiempos de entrega y analiticas de impacto.</span><br>
 
-              <blockquote class="blockquote moto">
-                &#8220;Stopping advertising to save money is like stopping your watch to save time.&#8221;
-                <footer>
-                  <small>
-                    <em>&mdash;Henry Ford</em>
-                  </small>
-                </footer>
-              </blockquote>
+            <blockquote class="blockquote moto">
+              &#8220;Stopping advertising to save money is like stopping your watch to save time.&#8221;
+              <footer>
+                <small>
+                  <em>&mdash;Henry Ford</em>
+                </small>
+              </footer>
+            </blockquote>
           </div>
         </v-card-title>
       </v-card>

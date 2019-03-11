@@ -1,13 +1,14 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-layout row wrap>
       <v-flex
         v-for="card in cardItems"
         :key="card.title"
         class="bg"
         xs12
-        ma-2
+        sm3
         pa-1
+        ma-4
       >
         <v-card pt-2>
           <v-container>

@@ -10,7 +10,7 @@
     >
       <nuxt-link to="/">
         <div v-if="miniVariant === false">
-          <img class="drawertitle" src="~/assets/logo2.png" height="55"></img>
+          <img class="drawertitle" src="~/assets/LogoColors.png" height="55"></img>
         </div>
         <div v-if="miniVariant === true" class="toolbartitle">
           <WebiLogo />
@@ -45,7 +45,7 @@
               icon
               @click.stop="miniVariant = !miniVariant"
             >
-              <v-icon color="#CA2C92">
+              <v-icon color="#ff0375">
                 {{ `chevron_${miniVariant ? 'right' : 'left'}` }}
               </v-icon>
             </v-btn>
@@ -59,14 +59,14 @@
     <v-toolbar
       fixed
       app
-      class="bg"
       height="70px"
+      class="transparent"
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
         <nuxt-link to="/">
           <div v-if="drawer === false">
-            <img class="toolbartitle" src="~/assets/logo2.png" height="64"></img>
+            <img class="toolbartitle" src="~/assets/LogoColors.png" height="64"></img>
           </div>
         </nuxt-link>
       </v-toolbar-title>
@@ -102,6 +102,11 @@ export default {
           icon: 'stars',
           title: 'Apps!',
           to: 'apps'
+        },
+        {
+          icon: 'stars',
+          title: 'Comando Ultimate',
+          to: 'comandoultimate'
         }
       ],
       naviconfig: [
@@ -127,9 +132,7 @@ export default {
   padding-top: 10px;
 }
 .bg {
-  background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
+  background-image: linear-gradient(90deg, #ff0375, #04bbff, #ff0375);
 }
-.navdrawer {
-  background-color: #CA2C92;
-}
+
 </style>

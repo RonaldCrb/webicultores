@@ -14,14 +14,14 @@
           <div>
             <span class="intro">Colocar texto relacionado a arte.</span><br>
 
-              <blockquote class="blockquote moto">
-                &#8220;Art is never finished, only abandoned.&#8221;
-                <footer>
-                  <small>
-                    <em>&mdash;Leonardo Davinci</em>
-                  </small>
-                </footer>
-              </blockquote>
+            <blockquote class="blockquote moto">
+              &#8220;Art is never finished, only abandoned.&#8221;
+              <footer>
+                <small>
+                  <em>&mdash;Leonardo Davinci</em>
+                </small>
+              </footer>
+            </blockquote>
           </div>
         </v-card-title>
       </v-card>

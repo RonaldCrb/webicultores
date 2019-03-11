@@ -6,7 +6,7 @@
   >
 </template>
 
-<style>
+  <style>
 .VuetifyLogo {
   padding-bottom: 10px;
   width: 50px;
@@ -21,3 +21,4 @@
   }
 }
 </style>
+</template>

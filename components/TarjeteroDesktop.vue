@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container fluid>
-      <v-layout row wrap justify-center>
+      <v-layout row justify-center>
         <v-flex
           v-for="card in cardItems"
           :key="card.title"
@@ -61,6 +61,13 @@ export default {
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
+        },
+        {
+          color: '#04bbff',
+          icon: 'offline_bolt',
+          title: 'Ultimate!',
+          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
+          link: 'comandoultimate'
         },
         {
           color: '#04bbff',
