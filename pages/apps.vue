@@ -1,16 +1,16 @@
 <template>
   <div>
     <AppsCard />
-    <Timeline />
+    <TimelineApps />
   </div>
 </template>
 
 <script>
 import AppsCard from '@/components/AppsCard.vue'
-import Timeline from '@/components/Timeline.vue'
+import TimelineApps from '@/components/TimelineApps.vue'
 export default {
   components: {
-    Timeline,
+    TimelineApps,
     AppsCard
   }
 }
