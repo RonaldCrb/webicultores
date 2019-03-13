@@ -72,15 +72,18 @@
       </v-toolbar-title>
 
       <v-spacer />
+      <SocialButtons class="mt-2" />
     </v-toolbar>
   </div>
 </template>
 
 <script>
 import WebiLogo from '@/components/WebiLogo'
+import SocialButtons from '@/components/SocialButtons.vue'
 export default {
   components: {
-    WebiLogo
+    WebiLogo,
+    SocialButtons
   },
   data() {
     return {
