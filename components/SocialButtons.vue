@@ -7,17 +7,17 @@
         </a>
       </div>
       <div class="px-3">
-        <a target="_blank" title="Siguenos en Instagram" href="https://www.instagram.com/PLACEHOLDER">
+        <a target="_blank" title="Siguenos en Instagram" href="https://www.instagram.com/ronaldcrb/">
           <img alt="Siguenos en instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border="0">
         </a>
       </div>
       <div class="px-3">
-        <a target="_blank" title="follow me on youtube" href="https://www.youtube.com/PLACEHOLDER">
+        <a target="_blank" title="follow me on youtube" href="https://www.youtube.com/channel/UCvA-UAOnvajhrnNW2jDN0Aw">
           <img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube40x40.png" border="0">
         </a>
       </div>
       <div class="px-3">
-        <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/PLACEHOLDER">
+        <a target="_blank" title="follow me on Twitter" href="https://twitter.com/RonaldCrb">
           <img alt="follow me on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png" border="0">
         </a>
       </div>
