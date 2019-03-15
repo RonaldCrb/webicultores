@@ -64,11 +64,21 @@
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
-        <nuxt-link to="/">
-          <div v-if="drawer === false">
-            <img class="toolbartitle" src="~/assets/LogoColors.png" height="64"></img>
-          </div>
-        </nuxt-link>
+        <div class="hidden-sm-and-up">
+          <nuxt-link to="/">
+            <div v-if="drawer === false">
+              <img class="toolbartitle" src="~/assets/W.png" height="64"></img>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="hidden-xs-only">
+          <nuxt-link to="/">
+            <div v-if="drawer === false">
+              <img class="toolbartitle" src="~/assets/LogoColors.png" height="64"></img>
+            </div>
+          </nuxt-link>
+        </div>
       </v-toolbar-title>
 
       <v-spacer />
