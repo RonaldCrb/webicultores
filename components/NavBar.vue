@@ -56,16 +56,15 @@
     <v-toolbar fixed app height="70px" class="transparent">
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
-
-          <nuxt-link to="/">
-            <div v-if="drawer === false">
-              <img
-                class="toolbartitle"
-                src="~/assets/LogoColors.png"
-                height="64"
-              >
-            </div>
-          </nuxt-link>
+        <nuxt-link to="/">
+          <div v-if="drawer === false">
+            <img
+              class="toolbartitle"
+              src="~/assets/LogoColors.png"
+              height="50"
+            >
+          </div>
+        </nuxt-link>
       </v-toolbar-title>
 
       <v-spacer />

@@ -2,7 +2,7 @@
   <div>
     <v-container fluid>
       <v-layout column>
-        <v-flex v-for="card in cardItems" :key="card.title" xs12 pa-1>
+        <v-flex v-for="card in cardItems" :key="card.title" xs12 py-1>
           <v-card class="tarjetas">
             <v-layout row wrap>
               <v-flex xs12 sm6>
@@ -63,12 +63,10 @@ export default {
 
 <style scoped>
 .fotos {
-  border-radius: 20px;
   max-width: 100%;
   height: auto;
 }
 .tarjetas {
-  border-radius: 20px;
 }
 .american {
   color: blue;

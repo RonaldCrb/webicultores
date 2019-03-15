@@ -10,17 +10,12 @@
         pa-1
         ma-4
       >
-        <v-card pt-2>
-          <v-container>
-            <v-layout row wrap>
-              <v-flex xs12>
-                <v-icon size="160" :color="card.color" class="centroimg">
-                  {{ card.icon }}
-                </v-icon>
-              </v-flex>
-            </v-layout>
-          </v-container>
-
+        <v-card router :to="card.link">
+          <v-flex xs12>
+            <v-icon size="150" :color="card.color" class="centroimg mt-3">
+              {{ card.icon }}
+            </v-icon>
+          </v-flex>
           <v-card-title>
             <v-container>
               <v-layout row wrap>
@@ -53,27 +48,31 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: 'verified_user',
+          icon: 'filter_vintage',
           title: 'Arte!',
-          content: 'Arte visionaria que eleva tu estado de conciencia'
+          content: 'Arte visionaria que eleva tu estado de conciencia',
+          link: 'arte'
         },
         {
-          color: '#5f2ae4',
+          color: '#3F51B5',
           icon: 'monetization_on',
           title: 'Marketing!',
-          content: 'Mercadeo de guerrilla para verte justo como quieres '
+          content: 'Mercadeo de guerrilla para verte justo como quieres',
+          link: 'marketing'
         },
         {
           color: '#04bbff',
           icon: 'offline_bolt',
           title: 'Ultimate!',
-          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots'
+          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
+          link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          icon: 'how_to_reg',
+          icon: 'stars',
           title: 'Apps!',
-          content: 'Apps que agradan a tus sentidos y manejan tu data'
+          content: 'Apps que agradan a tus sentidos y manejan tu data',
+          link: 'apps'
         }
       ]
     }

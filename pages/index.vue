@@ -1,7 +1,6 @@
 <template>
   <div>
     <BannerGiant />
-
     <v-layout row wrap>
       <v-flex xs12 class="hidden-sm-and-up">
         <TarjeteroMobile />
