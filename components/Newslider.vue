@@ -19,7 +19,6 @@
   </div>
 </template>
 
-
 <style scoped>
 * {
   box-sizing: border-box;

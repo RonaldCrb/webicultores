@@ -1,13 +1,7 @@
 <template>
   <v-container fluid>
-    <v-flex
-      fluid
-      xs12
-    >
-      <v-timeline
-        align-top
-        class="hidden-xs-only"
-      >
+    <v-flex fluid xs12>
+      <v-timeline align-top class="hidden-xs-only">
         <v-timeline-item
           v-for="item in items"
           :key="item.title"

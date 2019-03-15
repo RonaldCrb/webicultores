@@ -1,14 +1,6 @@
 <template>
-  <v-footer
-    height="auto"
-  >
-    <v-card
-      height="100%"
-      width="100%"
-      flat
-      tile
-      class="text-xs-center"
-    >
+  <v-footer height="auto">
+    <v-card height="100%" width="100%" flat tile class="text-xs-center">
       <v-card-text>
         <SocialButtons />
       </v-card-text>

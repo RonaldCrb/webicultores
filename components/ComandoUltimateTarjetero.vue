@@ -1,18 +1,18 @@
 <template>
   <div>
     <v-container fluid>
-      <v-layout row wrap>
-        <v-flex v-for="card in cardItems" :key="card.title" xs12>
-          <v-card>
+      <v-layout column>
+        <v-flex v-for="card in cardItems" :key="card.title" xs12 pa-1>
+          <v-card class="tarjetas">
             <v-layout row wrap>
-              <v-flex xs6>
-                <img :src="card.src" height="350px">
+              <v-flex xs12 sm6>
+                <img class="fotos" :src="card.src">
               </v-flex>
-              <v-flex xs6>
+              <v-flex xs12 sm6>
                 <v-card-title primary-title>
                   <h1>{{ card.title }}</h1>
                 </v-card-title>
-                <v-card-text class="px-0">
+                <v-card-text class="ma-1">
                   {{ card.content }}
                 </v-card-text>
               </v-flex>
@@ -62,6 +62,14 @@ export default {
 </script>
 
 <style scoped>
+.fotos {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.tarjetas {
+  border-radius: 20px;
+}
 .american {
   color: blue;
 }

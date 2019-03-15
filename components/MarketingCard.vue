@@ -12,15 +12,16 @@
         </v-container>
         <v-card-title>
           <div>
-            <span class="intro">Ver y dejarte ver, en eso consiste el intercambio
-              comunicacional de la web. Por esto creamos contenido muy relevante
-              para atraer al consumidor de tus productos directamente hacia ti.
-              Crecimos en un mundo conectado a traves de las redes sociales y
-              entendemos la importancia de una campana bien organizada con objetivos
-              medibles, tiempos de entrega y analiticas de impacto.</span><br>
+            <span class="intro">Ver y dejarte ver, en eso consiste el intercambio comunicacional
+              de la web. Por esto creamos contenido muy relevante para atraer al
+              consumidor de tus productos directamente hacia ti. Crecimos en un
+              mundo conectado a traves de las redes sociales y entendemos la
+              importancia de una campana bien organizada con objetivos medibles,
+              tiempos de entrega y analiticas de impacto.</span><br>
 
             <blockquote class="blockquote moto">
-              &#8220;Stopping advertising to save money is like stopping your watch to save time.&#8221;
+              &#8220;Stopping advertising to save money is like stopping your
+              watch to save time.&#8221;
               <footer>
                 <small>
                   <em>&mdash;Henry Ford</em>

@@ -10,7 +10,7 @@
     >
       <nuxt-link to="/">
         <div v-if="miniVariant === false">
-          <img class="drawertitle" src="~/assets/LogoColors.png" height="55"></img>
+          <img class="drawertitle" src="~/assets/LogoColors.png" height="55">
         </div>
         <div v-if="miniVariant === true" class="toolbartitle">
           <WebiLogo />
@@ -41,10 +41,7 @@
           @click.stop="miniVariant = !miniVariant"
         >
           <v-list-tile-action>
-            <v-btn
-              icon
-              @click.stop="miniVariant = !miniVariant"
-            >
+            <v-btn icon @click.stop="miniVariant = !miniVariant">
               <v-icon color="#ff0375">
                 {{ `chevron_${miniVariant ? 'right' : 'left'}` }}
               </v-icon>
@@ -56,33 +53,25 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar
-      fixed
-      app
-      height="70px"
-      class="transparent"
-    >
+    <v-toolbar fixed app height="70px" class="transparent">
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
-        <div class="hidden-sm-and-up">
-          <nuxt-link to="/">
-            <div v-if="drawer === false">
-              <img class="toolbartitle" src="~/assets/W.png" height="64"></img>
-            </div>
-          </nuxt-link>
-        </div>
 
-        <div class="hidden-xs-only">
           <nuxt-link to="/">
             <div v-if="drawer === false">
-              <img class="toolbartitle" src="~/assets/LogoColors.png" height="64"></img>
+              <img
+                class="toolbartitle"
+                src="~/assets/LogoColors.png"
+                height="64"
+              >
             </div>
           </nuxt-link>
-        </div>
       </v-toolbar-title>
 
       <v-spacer />
-      <SocialButtons class="mt-2" />
+      <div class="hidden-xs-only">
+        <SocialButtons class="mt-2" />
+      </div>
     </v-toolbar>
   </div>
 </template>
@@ -147,5 +136,4 @@ export default {
 .bg {
   background-image: linear-gradient(90deg, #ff0375, #04bbff, #ff0375);
 }
-
 </style>
