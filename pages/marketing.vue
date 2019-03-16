@@ -4,7 +4,7 @@
     <div class="hidden-xs-only">
       <TimelineMarketing />
     </div>
-    <div class="hidden-sm-and-up">
+    <div class="hidden-sm-and-up"> 
       <TimelineMarketingMobile />
     </div>
   </div>
