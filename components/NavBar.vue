@@ -105,7 +105,7 @@ export default {
           to: 'apps'
         },
         {
-          icon: 'stars',
+          icon: 'album',
           title: 'Comando Ultimate',
           to: 'comandoultimate'
         }

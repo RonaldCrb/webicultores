@@ -62,17 +62,17 @@ export default {
         },
         {
           color: '#04bbff',
-          icon: 'offline_bolt',
-          title: 'Ultimate!',
-          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
-          link: 'comandoultimate'
-        },
-        {
-          color: '#04bbff',
           icon: 'stars',
           title: 'Apps!',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
+        },
+        {
+          color: '#04bbff',
+          icon: 'album',
+          title: 'Ultimate!',
+          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
+          link: 'comandoultimate'
         }
       ]
     }
