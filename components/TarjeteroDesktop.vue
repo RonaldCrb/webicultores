@@ -14,11 +14,11 @@
         >
           <nuxt-link :to="card.link">
             <v-card dark>
-              <v-responsive contain>
-                  <img  src="~/assets/icons/Comunidad.png"  class="centroimg pa-1">
-              </v-responsive>
+
+                <img  class="foto" :src="`${card.icon}`" :hint="card.content">
+
               <v-card-title primary-title>
-                <v-container>
+                <v-container >
                   <v-layout row wrap>
                     <v-flex>
                       <h1 class="centro">
@@ -48,28 +48,28 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          image: '~/assets/icons/Creativos.png',
+          icon: 'icons/Creativos.png',
           title: 'Arte!',
           content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
         },
         {
           color: '#3F51B5',
-          image: '~/assets/icons/Marketing.png',
+          icon: 'icons/Creativos.png',
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          image: '~/assets/icons/Comunidad.png',
+          icon: 'icons/Creativos.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          image: '~/assets/icons/Apps.png',
+          icon: 'icons/Creativos.png',
           title: 'Apps!',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
@@ -79,9 +79,9 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .centro {
+  margin-top: -20px;
   text-align: center;
 }
 .contenido {
@@ -90,6 +90,11 @@ export default {
 .centroimg {
   align-self: center;
   height: 100%;
+  width: 100%;
+}
+.foto {
+  align-self: center;
+  padding: 30px;
   width: 100%;
 }
 .bg {

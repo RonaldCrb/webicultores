@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-layout justify-center row>
+    <v-layout justify-center row class="icon">
       <div class="px-2">
         <a
           target="_blank"
@@ -9,9 +9,9 @@
         >
           <img
             class="redes"
-            width="43"
+            width="36px"
             alt="follow me on facebook"
-            src="~/assets/FaceIcon.svg"
+            src="~/assets/redes/face.png"
             border="0"
           >
         </a>
@@ -23,40 +23,41 @@
           href="https://www.instagram.com/ronaldcrb/"
         >
           <img
+            shadow="20px"
             class="redes"
-            width="40"
+            width="36"
             alt="Siguenos en instagram"
-            src="~/assets/InstaIcon.svg"
+            src="~/assets/redes/Instagram.png"
             border="0"
           >
         </a>
       </div>
-      <div class="px-2">
+      <div class="px-2 ">
         <a
           target="_blank"
           title="follow me on youtube"
           href="https://www.youtube.com/channel/UCvA-UAOnvajhrnNW2jDN0Aw"
         >
           <img
-            width="43"
+            width="48"
             class="redes"
             alt="follow me on youtube"
-            src="~/assets/YoutubeIcon.svg"
+            src="~/assets/redes/Youtube.png"
             border="0"
           >
         </a>
       </div>
-      <div class="px-2">
+      <div class="px-2 pt-1 ">
         <a
           target="_blank"
           title="follow me on Twitter"
           href="https://twitter.com/RonaldCrb"
         >
           <img
-            width="43"
+            width="36"
             class="redes"
             alt="follow me on twitter"
-            src="~/assets/TwitterIcon.svg"
+            src="~/assets/redes/Twitter.png"
             border="0"
           >
         </a>
@@ -67,9 +68,15 @@
 
 <style>
 .redes {
-  transition: 0.4s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+a .redes {
+  transform: rotatey(0deg) scale(0.6);
 }
 .redes:hover {
-  transform: scale(1.2);
+  box-shadow: 0 0 15px white;
+  transform: scale(1.1);
+  opacity: 1;
 }
 </style>
