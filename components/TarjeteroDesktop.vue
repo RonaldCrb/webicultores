@@ -48,7 +48,7 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: '~/assets/icons/Marketing.png',
+          icon: '~/assets/icons/Creativos.png',
           title: 'Arte!',
           content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
@@ -62,14 +62,14 @@ export default {
         },
         {
           color: '#04bbff',
-          icon: '~/assets/icons/Marketing.png',
+          icon: '~/assets/icons/Comunidad.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          icon: '~/assets/icons/Marketing.png',
+          icon: '~/assets/icons/Apps.png',
           title: 'Apps!',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
