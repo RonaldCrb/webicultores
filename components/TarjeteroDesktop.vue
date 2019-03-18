@@ -15,7 +15,7 @@
           <nuxt-link :to="card.link">
             <v-card dark>
               <v-responsive contain>
-                  <img :src="card.icon"  class="centroimg pa-1">
+                  <img  src="~/assets/icons/Comunidad.png"  class="centroimg pa-1">
               </v-responsive>
               <v-card-title primary-title>
                 <v-container>
@@ -48,28 +48,28 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: '~/assets/icons/Creativos.png',
+          image: '~/assets/icons/Creativos.png',
           title: 'Arte!',
           content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
         },
         {
           color: '#3F51B5',
-          icon: '~/assets/icons/Marketing.png',
+          image: '~/assets/icons/Marketing.png',
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          icon: '~/assets/icons/Comunidad.png',
+          image: '~/assets/icons/Comunidad.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          icon: '~/assets/icons/Apps.png',
+          image: '~/assets/icons/Apps.png',
           title: 'Apps!',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
