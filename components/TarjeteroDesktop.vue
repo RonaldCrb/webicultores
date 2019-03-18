@@ -14,11 +14,9 @@
         >
           <nuxt-link :to="card.link">
             <v-card dark>
-              <v-responsive contain>
-                <v-icon class="centroimg pa-1" :color="card.color" size="200">
-                  {{ card.icon }}
-                </v-icon>
-              </v-responsive>
+              <v-flex xs12 contain>
+                <img class="foto" :src="`${card.icon}`" :hint="card.content">
+              </v-flex>
               <v-card-title primary-title>
                 <v-container>
                   <v-layout row wrap>
@@ -50,28 +48,28 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: 'filter_vintage',
+          icon: 'icons/Creativos.png',
           title: 'Arte!',
           content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
         },
         {
           color: '#3F51B5',
-          icon: 'monetization_on',
+          icon: 'icons/Marketing.png',
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          icon: 'offline_bolt',
+          icon: 'icons/Comunidad.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          icon: 'stars',
+          icon: 'icons/Apps.png',
           title: 'Apps!',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
@@ -93,6 +91,10 @@ export default {
   align-self: center;
   height: 100%;
   width: 100%;
+}
+.foto {
+  width: 100%;
+  height: 300px;
 }
 .bg {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);

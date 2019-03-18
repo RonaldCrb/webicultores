@@ -25,9 +25,9 @@
           exact
         >
           <v-list-tile-action>
-            <v-icon color="#00FFFF">
-              {{ item.icon }}
-            </v-icon>
+            <v-flex xs12>
+              <img :src="`${item.icon}`" class="fotos">
+            </v-flex>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title v-text="item.title" />
@@ -90,22 +90,22 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'filter_vintage',
+          icon: 'icons/Creativos.png',
           title: 'Arte!',
           to: 'arte'
         },
         {
-          icon: 'attach_money',
+          icon: 'icons/Marketing.png',
           title: 'Marketing!',
           to: 'marketing'
         },
         {
-          icon: 'stars',
+          icon: 'icons/Apps.png',
           title: 'Apps!',
           to: 'apps'
         },
         {
-          icon: 'album',
+          icon: 'icons/Comunidad.png',
           title: 'Comando Ultimate',
           to: 'comandoultimate'
         }
@@ -131,6 +131,10 @@ export default {
 .drawertitle {
   padding-left: 15px;
   padding-top: 10px;
+}
+.fotos {
+  height: 30px;
+  width: auto;
 }
 .bg {
   background-image: linear-gradient(90deg, #ff0375, #04bbff, #ff0375);
