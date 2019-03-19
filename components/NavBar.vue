@@ -26,8 +26,8 @@
           class="pad"
         >
           <v-list-tile-action class="">
-            <v-flex >
-              <img width="50px"  class="" :src="`${item.icon}`">
+            <v-flex>
+              <img width="50px" class="" :src="`${item.icon}`">
             </v-flex>
             <!-- <v-icon color="#00FFFF">
               {{ item.icon }}

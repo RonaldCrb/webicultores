@@ -25,7 +25,7 @@
             class=""
             width="36"
             alt="Siguenos en instagram"
-            src="~/assets/redes/Instagram.png"
+            src="~/assets/redes/instagram.png"
             border="0"
           >
         </a>
@@ -40,7 +40,7 @@
             width="48"
             class=""
             alt="follow me on youtube"
-            src="~/assets/redes/Youtube.png"
+            src="~/assets/redes/youtube.png"
             border="0"
           >
         </a>
@@ -55,7 +55,7 @@
             width="42"
             class=""
             alt="follow me on twitter"
-            src="~/assets/redes/Twitter.png"
+            src="~/assets/redes/twitter.png"
             border="0"
           >
         </a>

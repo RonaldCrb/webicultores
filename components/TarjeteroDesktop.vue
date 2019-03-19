@@ -14,11 +14,10 @@
         >
           <nuxt-link :to="card.link">
             <v-card dark>
-
-                <img  class="foto" :src="`${card.icon}`" :hint="card.content">
+              <img class="foto" :src="`${card.icon}`" :hint="card.content">
 
               <v-card-title primary-title>
-                <v-container >
+                <v-container>
                   <v-layout row wrap>
                     <v-flex>
                       <h1 class="centro">
