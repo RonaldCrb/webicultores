@@ -12,9 +12,7 @@
       >
         <v-card router :to="card.link">
           <v-flex xs12>
-            <v-icon size="150" :color="card.color" class="centroimg mt-3">
-              {{ card.icon }}
-            </v-icon>
+            <img class="foto" :src="`${card.icon}`" :hint="card.content">
           </v-flex>
           <v-card-title>
             <v-container>
@@ -48,31 +46,31 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: 'filter_vintage',
+          icon: 'icons/Creativos.png',
           title: 'Arte!',
           content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
         },
         {
           color: '#3F51B5',
-          icon: 'monetization_on',
+          icon: 'icons/Creativos.png',
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          icon: 'stars',
-          title: 'Apps!',
-          content: 'Apps que agradan a tus sentidos y manejan tu data',
-          link: 'apps'
-        },
-        {
-          color: '#04bbff',
-          icon: 'album',
+          icon: 'icons/Creativos.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
+        },
+        {
+          color: '#04bbff',
+          icon: 'icons/Creativos.png',
+          title: 'Apps!',
+          content: 'Apps que agradan a tus sentidos y manejan tu data',
+          link: 'apps'
         }
       ]
     }
@@ -81,6 +79,11 @@ export default {
 </script>
 
 <style scoped>
+.foto {
+  align-self: center;
+  padding: 30px;
+  width: 100%;
+}
 .centro {
   text-align: center;
 }
