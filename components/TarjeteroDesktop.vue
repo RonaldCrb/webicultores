@@ -93,6 +93,7 @@ export default {
   width: 100%;
 }
 .foto {
+  padding: 40px;
   width: 100%;
   height: 300px;
 }

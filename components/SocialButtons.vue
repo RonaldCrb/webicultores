@@ -1,19 +1,69 @@
 <template>
   <div>
     <v-layout justify-center row>
-      <div
-        v-for="button in socialButtons"
-        :key="button.title"
-        class="px-3"
-      >
+      <div class="px-3">
         <a
           target="_blank"
-          :title="button.title"
-          :href="`${button.href}`"
+          title="Siguenos en Facebook"
+          href="https://www.facebook.com/Comando-Ultimate-792152754453407/?eid=ARDBlzT4Mcwb9fdvrCkAFaQYxUflUtWkC1y0vXQlbIT01OfGr_p2ZnYu8eVhwDDaqByMnCHdQwgxOPze"
         >
           <img
-            alt="button.title"
-            :src="`${button.icon}`"
+            alt="follow me on facebook"
+            src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png"
+            border="0"
+          >
+        </a>
+      </div>
+      <div class="px-3">
+        <a
+          target="_blank"
+          title="Siguenos en Instagram"
+          href="https://www.instagram.com/ronaldcrb/"
+        >
+          <img
+            alt="Siguenos en instagram"
+            src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png"
+            border="0"
+          >
+        </a>
+      </div>
+      <div class="px-3">
+        <a
+          target="_blank"
+          title="follow me on youtube"
+          href="https://www.youtube.com/channel/UCvA-UAOnvajhrnNW2jDN0Aw"
+        >
+          <img
+            alt="follow me on youtube"
+            src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube40x40.png"
+            border="0"
+          >
+        </a>
+      </div>
+      <div class="px-3">
+        <a
+          target="_blank"
+          title="follow me on Twitter"
+          href="https://twitter.com/RonaldCrb"
+        >
+          <img
+            alt="follow me on twitter"
+            src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png"
+            border="0"
+          >
+        </a>
+      </div>
+      <div class="px-3">
+        <a
+          target="_blank"
+          title="follow me on Twitter"
+          href="https://www.linkedin.com/in/ronaldalonzo/"
+        >
+          <img
+            alt="follow me on twitter"
+            height="40px"
+            width="40px"
+            src="http://www.mavitecgreenenergy.com/wordpress/wp-content/uploads/2016/04/Linkedin-Icon-1024x1024.png"
             border="0"
           >
         </a>
@@ -21,38 +71,6 @@
     </v-layout>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      socialButtons: [
-        {
-          title: 'Siguenos en Facebook',
-          icon: 'social/FaceIcon.svg',
-          href:
-            'https://www.facebook.com/Comando-Ultimate-792152754453407/?eid=ARDBlzT4Mcwb9fdvrCkAFaQYxUflUtWkC1y0vXQlbIT01OfGr_p2ZnYu8eVhwDDaqByMnCHdQwgxOPze'
-        },
-        {
-          title: 'Siguenos en Instagram',
-          icon: 'social/InstaIcon.svg',
-          href: 'https://www.instagram.com/ronaldcrb/'
-        },
-        {
-          title: 'Siguenos en Youtube',
-          icon: 'social/YoutubeIcon.svg',
-          href: 'https://www.youtube.com/channel/UCvA-UAOnvajhrnNW2jDN0Aw'
-        },
-        {
-          title: 'Siguenos en Twitter',
-          icon: 'social/TwitterIcon.svg',
-          href: 'https://twitter.com/RonaldCrb'
-        }
-      ]
-    }
-  }
-}
-</script>
 
 <style scoped>
 </style>
