@@ -1,10 +1,9 @@
 <template>
-  <v-layout row>
+  <v-layout row d-block>
     <v-flex
       v-for="webicultor in webicultores"
       :key="webicultor.name"
       xs12
-      sm6
       ma-3
     >
       <v-card :color="webicultor.color" class="white--text">
@@ -36,11 +35,24 @@
           </v-flex>
         </v-layout>
         <v-divider light />
-        <v-card-actions class="pa-3">
+        <v-card-actions class="pa-3 bggray">
           <v-spacer />
-          <h2 class="moto">{{ webicultor.moto }}</h2>
           <div>
             <v-layout justify-center row class="icon fondo">
+              <div v-if="webicultor.facebook" class="px-3 redes">
+                <a
+                  target="_blank"
+                  title="Siguenos en Facebook"
+                  :href="`${webicultor.facebook}`"
+                >
+                  <img
+                    width="36px"
+                    alt="Siguenos en Facebook"
+                    src="~/assets/redes/face.png"
+                    border="0"
+                  >
+                </a>
+              </div>
               <div v-if="webicultor.instagram" class="px-3 redes">
                 <a
                   target="_blank"
@@ -138,6 +150,7 @@ export default {
           instagram: `https://www.instagram.com/ronaldcrb/`,
           linkedIn: 'https://www.linkedin.com/in/ronaldalonzo/',
           twitter: 'https://twitter.com/RonaldCrb',
+          facebook: 'https://www.facebook.com/alonzo.ronald',
           youtube: 'https://www.youtube.com/channel/UCvA-UAOnvajhrnNW2jDN0Aw'
         }
       ]
@@ -150,6 +163,10 @@ export default {
 .perfil {
   padding: 30px;
   height: 250px;
+  width: auto;
+}
+.bggray {
+  background-color: #424242;
 }
 .moto {
   color: #424242;
