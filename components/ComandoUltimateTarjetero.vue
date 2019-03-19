@@ -10,10 +10,10 @@
               </v-flex>
               <v-flex xs12 sm6>
                 <v-card-title primary-title>
-                  <h1>{{ card.title }}</h1>
+                  <p class="titulo">{{ card.title }}</p>
                 </v-card-title>
                 <v-card-text class="ma-1">
-                  {{ card.content }}
+                  <p class="contenido">{{ card.content }}</p>
                 </v-card-text>
               </v-flex>
             </v-layout>
@@ -71,5 +71,13 @@ export default {
 }
 .american {
   color: blue;
+}
+.contenido {
+  font-size: 1.6em;
+  padding: 10px;
+}
+.titulo {
+  padding: 40px;
+  font-size: 4em;
 }
 </style>
