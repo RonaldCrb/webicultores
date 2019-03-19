@@ -1,14 +1,13 @@
 <template>
   <div>
-    <v-layout justify-center row class="icon">
-      <div class="px-2">
+    <v-layout justify-center row class="icon fondo">
+      <div class="px-3 redes">
         <a
           target="_blank"
           title="Siguenos en Facebook"
           href="https://www.facebook.com/Comando-Ultimate-792152754453407/?eid=ARDBlzT4Mcwb9fdvrCkAFaQYxUflUtWkC1y0vXQlbIT01OfGr_p2ZnYu8eVhwDDaqByMnCHdQwgxOPze"
         >
           <img
-            class="redes"
             width="36px"
             alt="follow me on facebook"
             src="~/assets/redes/face.png"
@@ -16,15 +15,14 @@
           >
         </a>
       </div>
-      <div class="px-2">
+      <div class="px-3 redes">
         <a
           target="_blank"
           title="Siguenos en Instagram"
           href="https://www.instagram.com/ronaldcrb/"
         >
           <img
-            shadow="20px"
-            class="redes"
+            class=""
             width="36"
             alt="Siguenos en instagram"
             src="~/assets/redes/Instagram.png"
@@ -32,7 +30,7 @@
           >
         </a>
       </div>
-      <div class="px-2 ">
+      <div class="px-3 redes">
         <a
           target="_blank"
           title="follow me on youtube"
@@ -40,22 +38,22 @@
         >
           <img
             width="48"
-            class="redes"
+            class=""
             alt="follow me on youtube"
             src="~/assets/redes/Youtube.png"
             border="0"
           >
         </a>
       </div>
-      <div class="px-2 pt-1 ">
+      <div class="px-3 redes">
         <a
           target="_blank"
           title="follow me on Twitter"
           href="https://twitter.com/RonaldCrb"
         >
           <img
-            width="36"
-            class="redes"
+            width="42"
+            class=""
             alt="follow me on twitter"
             src="~/assets/redes/Twitter.png"
             border="0"
@@ -68,15 +66,40 @@
 
 <style>
 .redes {
-  transition: 0.3s;
-  opacity: 0.5;
-}
-a .redes {
-  transform: rotatey(0deg) scale(0.6);
+  opacity: 0.4;
+  transition: 0.2s;
+  transform: scale(0.9);
 }
 .redes:hover {
-  box-shadow: 0 0 15px white;
-  transform: scale(1.1);
   opacity: 1;
+  transform: scale(1);
+}
+.redes:hover:before {
+  left: 0;
+  content: '';
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+  filter: blur(12px);
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
+}
+.fondo::before {
+  width: 20%;
+  flex-grow: 20%;
+  height: 10%;
+  opacity: 0;
+  content: '0';
+  margin-top: 10px;
+  transition: 0.2s;
+  position: absolute;
+  filter: blur(18px);
+  transition: 0.4s;
+  background: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
+}
+.fondo:hover:before {
+  mix-blend-mode: lighten;
+  opacity: 0.9;
 }
 </style>
