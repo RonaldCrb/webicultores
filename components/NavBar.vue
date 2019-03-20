@@ -18,16 +18,20 @@
       </nuxt-link>
       <v-list>
         <v-list-tile
-          v-for="(item, i) in items"
-          :key="i"
+          v-for="item in items"
+          :key="item.title"
           :to="item.to"
           router
           exact
+          class="pad"
         >
           <v-list-tile-action>
-            <v-flex xs12>
-              <img :src="`${item.icon}`" class="fotos">
+            <v-flex>
+              <img width="50px" :src="`${item.icon}`">
             </v-flex>
+            <!-- <v-icon color="#00FFFF">
+              {{ item.icon }}
+            </v-icon> -->
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title v-text="item.title" />
@@ -61,7 +65,7 @@
             <img
               class="toolbartitle"
               src="~/assets/LogoColors.png"
-              height="50"
+              height="70px"
             >
           </div>
         </nuxt-link>
@@ -95,24 +99,24 @@ export default {
           to: 'arte'
         },
         {
-          icon: 'icons/Marketing.png',
+          icon: 'icons/Creativos.png',
           title: 'Marketing!',
           to: 'marketing'
         },
         {
-          icon: 'icons/Apps.png',
+          icon: 'icons/Creativos.png',
           title: 'Apps!',
           to: 'apps'
         },
         {
-          icon: 'icons/Comunidad.png',
+          icon: 'icons/Creativos.png',
           title: 'Comando Ultimate',
           to: 'comandoultimate'
         }
       ],
       naviconfig: [
         {
-          icon: 'chevron',
+          icon: 'icons/Creativos.png',
           title: 'Mini',
           task: 'miniVariant = !miniVariant'
         }
@@ -125,9 +129,11 @@ export default {
 
 <style lang="css" scoped>
 .toolbartitle {
-  padding-top: 10px;
-
-}
+  padding-top: 20px;
+  }
+.pad {
+  padding-top: 15px;
+  }
 .drawertitle {
   padding-left: 15px;
   padding-top: 10px;

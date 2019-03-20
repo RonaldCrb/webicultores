@@ -14,9 +14,8 @@
         >
           <nuxt-link :to="card.link">
             <v-card dark>
-              <v-flex xs12 contain>
-                <img class="foto" :src="`${card.icon}`" :hint="card.content">
-              </v-flex>
+              <img class="foto" :src="`${card.icon}`" :hint="card.content">
+
               <v-card-title primary-title>
                 <v-container>
                   <v-layout row wrap>
@@ -55,21 +54,21 @@ export default {
         },
         {
           color: '#3F51B5',
-          icon: 'icons/Marketing.png',
+          icon: 'icons/Creativos.png',
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Comunidad.png',
+          icon: 'icons/Creativos.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Apps.png',
+          icon: 'icons/Creativos.png',
           title: 'Apps!',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
@@ -79,9 +78,9 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .centro {
+  margin-top: -20px;
   text-align: center;
 }
 .contenido {
@@ -93,8 +92,9 @@ export default {
   width: 100%;
 }
 .foto {
+  align-self: center;
+  padding: 30px;
   width: 100%;
-  height: 300px;
 }
 .bg {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
