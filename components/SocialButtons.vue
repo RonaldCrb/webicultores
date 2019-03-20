@@ -105,7 +105,7 @@
   flex-grow: 20%;
   height: 10%;
   opacity: 0;
-  content: '0';
+  content: '';
   margin-top: 10px;
   transition: 0.2s;
   position: absolute;

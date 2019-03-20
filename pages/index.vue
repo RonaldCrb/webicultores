@@ -9,20 +9,20 @@
         <TarjeteroDesktop />
       </v-flex>
       <v-flex xs12>
-        <Perfiles />
+        <Perfiles2 />
       </v-flex>
     </v-layout>
   </div>
 </template>
 <script>
-import Perfiles from '@/components/Perfiles.vue'
+import Perfiles2 from '@/components/Perfiles2.vue'
 import BannerGiant from '@/components/BannerGiant.vue'
 import TarjeteroDesktop from '@/components/TarjeteroDesktop.vue'
 import TarjeteroMobile from '@/components/TarjeteroMobile.vue'
 
 export default {
   components: {
-    Perfiles,
+    Perfiles2,
     TarjeteroMobile,
     TarjeteroDesktop,
     BannerGiant

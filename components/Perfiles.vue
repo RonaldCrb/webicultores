@@ -1,255 +1,254 @@
 <template>
   <div>
     <v-layout row>
-    <v-flex
-      v-for="webicultor in webicultores"
-      :key="webicultor.name"
-      sm6
-      ma-3
-      class="hidden-xs-only"
-    >
-      <v-card :color="webicultor.color" class="white--text">
-        <v-layout row>
-          <v-flex sm4>
-            <v-img
-              :src="`${webicultor.img}`"
-              contain
-              class="perfil"
-            />
-          </v-flex>
-          <v-flex sm8>
-            <v-card-title primary-title>
-              <div>
-                <h2 class="head">
-                  {{ webicultor.headline }}
-                </h2>
-                <h1 class="name">
-                  {{ webicultor.name }}
-                </h1>
-                <p class="skills">
-                  {{ webicultor.skills }}
-                </p>
-                <p class="bio">
-                  {{ webicultor.bio }}
-                </p>
-              </div>
-            </v-card-title>
-          </v-flex>
-        </v-layout>
-        <v-divider light />
-        <v-card-actions class="pa-3 bggray">
-          <v-spacer />
-          <div>
-            <v-layout justify-center row class="icon fondo">
-              <div v-if="webicultor.facebook" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Siguenos en Facebook"
-                  :href="`${webicultor.facebook}`"
-                >
-                  <img
-                    width="36px"
-                    alt="Siguenos en Facebook"
-                    src="~/assets/redes/face.png"
-                    border="0"
+      <v-flex
+        v-for="webicultor in webicultores"
+        :key="webicultor.name"
+        sm6
+        ma-3
+        class="hidden-xs-only"
+      >
+        <v-card :color="webicultor.color" class="white--text">
+          <v-layout row>
+            <v-flex sm4>
+              <v-img
+                :src="`${webicultor.img}`"
+                contain
+                class="perfil"
+              />
+            </v-flex>
+            <v-flex sm8>
+              <v-card-title primary-title>
+                <div>
+                  <h2 class="head">
+                    {{ webicultor.headline }}
+                  </h2>
+                  <h1 class="name">
+                    {{ webicultor.name }}
+                  </h1>
+                  <p class="skills">
+                    {{ webicultor.skills }}
+                  </p>
+                  <p class="bio">
+                    {{ webicultor.bio }}
+                  </p>
+                </div>
+              </v-card-title>
+            </v-flex>
+          </v-layout>
+          <v-divider light />
+          <v-card-actions class="pa-3 bggray">
+            <v-spacer />
+            <div>
+              <v-layout justify-center row class="icon fondo">
+                <div v-if="webicultor.facebook" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Siguenos en Facebook"
+                    :href="`${webicultor.facebook}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.instagram" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Siguenos en Instagram"
-                  :href="`${webicultor.instagram}`"
-                >
-                  <img
-                    class=""
-                    width="36"
-                    alt="Siguenos en Instagram"
-                    src="~/assets/redes/instagram.png"
-                    border="0"
+                    <img
+                      width="36px"
+                      alt="Siguenos en Facebook"
+                      src="~/assets/redes/face.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.instagram" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Siguenos en Instagram"
+                    :href="`${webicultor.instagram}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.youtube" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en Youtube"
-                  :href="`${webicultor.youtube}`"
-                >
-                  <img
-                    width="48"
-                    class=""
-                    alt="Sigueme en Youtube"
-                    src="~/assets/redes/youtube.png"
-                    border="0"
+                    <img
+                      class=""
+                      width="36"
+                      alt="Siguenos en Instagram"
+                      src="~/assets/redes/instagram.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.youtube" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en Youtube"
+                    :href="`${webicultor.youtube}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.twitter" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en Twitter"
-                  :href="`${webicultor.twitter}`"
-                >
-                  <img
-                    width="42"
-                    class=""
-                    alt="Sigueme en Twitter"
-                    src="~/assets/redes/twitter.png"
-                    border="0"
+                    <img
+                      width="48"
+                      class=""
+                      alt="Sigueme en Youtube"
+                      src="~/assets/redes/youtube.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.twitter" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en Twitter"
+                    :href="`${webicultor.twitter}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.linkedIn" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en LinkedIn"
-                  :href="`${webicultor.linkedIn}`"
-                >
-                  <img
-                    alt="Sigueme en LinkedIn"
-                    height="40px"
-                    width="40px"
-                    src="https://www.allphincom.com/images/site/linkedin_icon_white.png"
-                    border="0"
+                    <img
+                      width="42"
+                      class=""
+                      alt="Sigueme en Twitter"
+                      src="~/assets/redes/twitter.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.linkedIn" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en LinkedIn"
+                    :href="`${webicultor.linkedIn}`"
                   >
-                </a>
-              </div>
-            </v-layout>
-          </div>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+                    <img
+                      alt="Sigueme en LinkedIn"
+                      height="40px"
+                      width="40px"
+                      src="https://www.allphincom.com/images/site/linkedin_icon_white.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+              </v-layout>
+            </div>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
 
-  <!-- Version para movil -->
+    <!-- Version para movil -->
 
-  <v-layout row wrap>
-    <v-flex
-      v-for="webicultor in webicultores"
-      :key="webicultor.name"
-      xs12
-      ma-3
-      class="hidden-sm-and-up"
-    >
-      <v-card :color="webicultor.color" class="white--text">
-        <v-layout row d-block>
-          <v-flex xs12>
-            <v-img
-              :src="`${webicultor.img}`"
-              contain
-              class="perfil"
-            />
-          </v-flex>
-        </v-layout>
+    <v-layout row wrap>
+      <v-flex
+        v-for="webicultor in webicultores"
+        :key="webicultor.name"
+        xs12
+        ma-3
+        class="hidden-sm-and-up"
+      >
+        <v-card :color="webicultor.color" class="white--text">
+          <v-layout row d-block>
+            <v-flex xs12>
+              <v-img
+                :src="`${webicultor.img}`"
+                contain
+                class="perfil"
+              />
+            </v-flex>
+          </v-layout>
 
-        <v-layout row d-block>
-          <v-flex xs12>
-            <v-card-title primary-title>
-              <div>
-                <h2 class="head">
-                  {{ webicultor.headline }}
-                </h2>
-                <h1 class="name">
-                  {{ webicultor.name }}
-                </h1>
-                <p class="skills">
-                  {{ webicultor.skills }}
-                </p>
-                <p class="bio">
-                  {{ webicultor.bio }}
-                </p>
-              </div>
-            </v-card-title>
-          </v-flex>
-        </v-layout>
-        <v-divider light />
-        <v-card-actions class="pa-3 bggray">
-          <v-spacer />
-          <div>
-            <v-layout justify-center row class="icon">
-              <div v-if="webicultor.facebook" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Siguenos en Facebook"
-                  :href="`${webicultor.facebook}`"
-                >
-                  <img
-                    width="36px"
-                    alt="Siguenos en Facebook"
-                    src="~/assets/redes/face.png"
-                    border="0"
+          <v-layout row d-block>
+            <v-flex xs12>
+              <v-card-title primary-title>
+                <div>
+                  <h2 class="head">
+                    {{ webicultor.headline }}
+                  </h2>
+                  <h1 class="name">
+                    {{ webicultor.name }}
+                  </h1>
+                  <p class="skills">
+                    {{ webicultor.skills }}
+                  </p>
+                  <p class="bio">
+                    {{ webicultor.bio }}
+                  </p>
+                </div>
+              </v-card-title>
+            </v-flex>
+          </v-layout>
+          <v-divider light />
+          <v-card-actions class="pa-3 bggray">
+            <v-spacer />
+            <div>
+              <v-layout justify-center row class="icon">
+                <div v-if="webicultor.facebook" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Siguenos en Facebook"
+                    :href="`${webicultor.facebook}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.instagram" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Siguenos en Instagram"
-                  :href="`${webicultor.instagram}`"
-                >
-                  <img
-                    class=""
-                    width="36"
-                    alt="Siguenos en Instagram"
-                    src="~/assets/redes/instagram.png"
-                    border="0"
+                    <img
+                      width="36px"
+                      alt="Siguenos en Facebook"
+                      src="~/assets/redes/face.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.instagram" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Siguenos en Instagram"
+                    :href="`${webicultor.instagram}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.youtube" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en Youtube"
-                  :href="`${webicultor.youtube}`"
-                >
-                  <img
-                    width="48"
-                    class=""
-                    alt="Sigueme en Youtube"
-                    src="~/assets/redes/youtube.png"
-                    border="0"
+                    <img
+                      class=""
+                      width="36"
+                      alt="Siguenos en Instagram"
+                      src="~/assets/redes/instagram.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.youtube" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en Youtube"
+                    :href="`${webicultor.youtube}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.twitter" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en Twitter"
-                  :href="`${webicultor.twitter}`"
-                >
-                  <img
-                    width="42"
-                    class=""
-                    alt="Sigueme en Twitter"
-                    src="~/assets/redes/twitter.png"
-                    border="0"
+                    <img
+                      width="48"
+                      class=""
+                      alt="Sigueme en Youtube"
+                      src="~/assets/redes/youtube.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.twitter" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en Twitter"
+                    :href="`${webicultor.twitter}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.linkedIn" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en LinkedIn"
-                  :href="`${webicultor.linkedIn}`"
-                >
-                  <img
-                    alt="Sigueme en LinkedIn"
-                    height="40px"
-                    width="40px"
-                    src="https://www.allphincom.com/images/site/linkedin_icon_white.png"
-                    border="0"
+                    <img
+                      width="42"
+                      class=""
+                      alt="Sigueme en Twitter"
+                      src="~/assets/redes/twitter.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.linkedIn" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en LinkedIn"
+                    :href="`${webicultor.linkedIn}`"
                   >
-                </a>
-              </div>
-            </v-layout>
-          </div>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
-
-</div>
+                    <img
+                      alt="Sigueme en LinkedIn"
+                      height="40px"
+                      width="40px"
+                      src="https://www.allphincom.com/images/site/linkedin_icon_white.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+              </v-layout>
+            </div>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </div>
 </template>
 
 <script>
@@ -344,7 +343,7 @@ export default {
   flex-grow: 20%;
   height: 10%;
   opacity: 0;
-  content: '0';
+  content: '';
   margin-top: 10px;
   transition: 0.2s;
   position: absolute;
