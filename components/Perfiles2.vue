@@ -258,6 +258,21 @@ export default {
     return {
       webicultores: [
         {
+          name: 'Carmen Moya',
+          img: 'https://i.ebayimg.com/images/g/n9MAAOSwNSxVBtzI/s-l300.jpg',
+          headline: 'Redes',
+          skills:
+            'Arte Grafico e ilustración, Edición de Videos, Desarrollo Frontend',
+          color: '#130E1A',
+          bio:
+            'Soy un artista grafico dedicado al arte digital, vivo creando proyectos desde simples bocetos hasta diseños complejos, Me dedico a crecer profesionalmente ofreciendo resultados muy creativos. Poseo la capacidad de adaptación con los requerimientos del cliente para ayudarlo a crear lo que realmete busca, soluciono las necesidades de comunicacion visual en diferentes plataformas: Desarrolo Web, indentidad corporativa, ilustración digital/tradicional, creación de contenido e imagen visual adaptada para publicidad, mediante el diseño y la creacion de graficos para fines de mercadotecnia, publicidad y editorial. Actualmente interesado en el desarrollo web de proyectos creativos de aplicaciones completas.',
+          moto: 'Sigueme!',
+          instagram: 'https://www.instagram.com/ismrnobody/?hl=es-la',
+          twitter: 'https://twitter.com',
+          facebook: 'https://www.facebook.com/jose.millan2',
+          youtube: 'https://www.youtube.com'
+        },
+        {
           name: 'José Millan',
           img: 'https://i.ebayimg.com/images/g/n9MAAOSwNSxVBtzI/s-l300.jpg',
           headline: 'Artista Gráfico Digital',
@@ -267,10 +282,10 @@ export default {
           bio:
             'Soy un artista grafico dedicado al arte digital, vivo creando proyectos desde simples bocetos hasta diseños complejos, Me dedico a crecer profesionalmente ofreciendo resultados muy creativos. Poseo la capacidad de adaptación con los requerimientos del cliente para ayudarlo a crear lo que realmete busca, soluciono las necesidades de comunicacion visual en diferentes plataformas: Desarrolo Web, indentidad corporativa, ilustración digital/tradicional, creación de contenido e imagen visual adaptada para publicidad, mediante el diseño y la creacion de graficos para fines de mercadotecnia, publicidad y editorial. Actualmente interesado en el desarrollo web de proyectos creativos de aplicaciones completas.',
           moto: 'Sigueme!',
-          instagram: 'https://www.linkedin.com/in/ronaldalonzo/',
-          twitter: 'https://twitter.com/RonaldCrb',
+          instagram: 'https://www.instagram.com/ismrnobody/?hl=es-la',
+          twitter: 'https://twitter.com',
           facebook: 'https://www.facebook.com/jose.millan2',
-          youtube: 'https://www.youtube.com/channel/UC0MxSyM9Xz4IZFYAXzwU1Xw'
+          youtube: 'https://www.youtube.com'
         },
         {
           name: 'Ron Alonzo',
