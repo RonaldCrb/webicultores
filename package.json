@@ -1,7 +1,7 @@
 {
-  "name": "webicultores",
+  "name": "Webicultores.com",
   "version": "1.0.0",
-  "description": "Web oficial de Webicultores.com",
+  "description": "App oficial de Webicultores.com, agrupacion de artistas y desarrolladores Web, con el objetivo de ofrecer nuestros talentos en el mundo digital.",
   "author": "Ron Alonzo + Jose Millan",
   "private": true,
   "scripts": {
