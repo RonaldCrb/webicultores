@@ -135,7 +135,7 @@
       >
         <v-card :color="webicultor.color" class="white--text">
           <v-layout row d-block>
-            <v-flex xs12>
+            <v-flex xs6 offset-xs3>
               <v-img
                 :src="`${webicultor.img}`"
                 contain
@@ -148,13 +148,13 @@
             <v-flex xs12>
               <v-card-title primary-title>
                 <div>
-                  <h2 class="head">
+                  <h2 class="text-xs-center head">
                     {{ webicultor.headline }}
                   </h2>
-                  <h1 class="name">
+                  <h1 class="text-xs-center name">
                     {{ webicultor.name }}
                   </h1>
-                  <p class="skills">
+                  <p class="text-xs-center skills">
                     {{ webicultor.skills }}
                   </p>
                   <p class="bio">
@@ -169,6 +169,8 @@
             <v-spacer />
             <div>
               <v-layout justify-center row class="icon">
+                <v-flex xs12 d-flex >
+
                 <div v-if="webicultor.facebook" class="px-3 redes">
                   <a
                     target="_blank"
@@ -243,6 +245,7 @@
                     >
                   </a>
                 </div>
+              </v-flex>
               </v-layout>
             </div>
           </v-card-actions>
@@ -265,7 +268,7 @@ export default {
           skills: 'Mercadeo Digital, Direccion Cinematografica, Redes Sociales',
           color: '#130E1A',
           bio:
-            'Me encanta el Mercadeo, la publicidad y promocion de marcas.................................................... ................................................... .......................................................................................................................................................................................................................................................................................................................................',
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           moto: 'Sigueme!',
           instagram: 'https://www.instagram.com/orion_gallery/',
           facebook: 'https://www.facebook.com/carmencecilia.moya',
@@ -308,9 +311,13 @@ export default {
 </script>
 
 <style scoped>
+.icon {
+  justify-content: center;
+}
 .perfil {
   border-style: inset;
-  padding-left: 30px;
+  justify-content: center;
+  padding-top: 20px;
   height: 160px;
   width: 160px;
   border: 1px solid #5f2ae4;
