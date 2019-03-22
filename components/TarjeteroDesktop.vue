@@ -54,21 +54,21 @@ export default {
         },
         {
           color: '#3F51B5',
-          icon: 'icons/Creativos.png',
+          icon: 'icons/Marketing.png',
           title: 'Marketing!',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Creativos.png',
+          icon: 'icons/Comunidad.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Creativos.png',
+          icon: 'icons/Apps.png',
           title: 'Apps!',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
@@ -94,7 +94,20 @@ export default {
 .foto {
   align-self: center;
   padding: 30px;
-  width: 100%;
+  width: 200px;
+}
+.foto::before {
+  content: '';
+  top: -2px;
+  left: -2px;
+  opacity: 0;
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.8s 0.2s;
+  border: 3px solid #ff0375;
+  box-shadow: 0 0 4px #5f2ae4;
 }
 .bg {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
