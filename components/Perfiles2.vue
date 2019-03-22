@@ -4,11 +4,11 @@
       <v-flex
         v-for="webicultor in webicultores"
         :key="webicultor.name"
-        sm6
+        xs12
         ma-4
         class="hidden-xs-only"
       >
-        <v-card width="800px" :color="webicultor.color">
+        <v-card :color="webicultor.color">
           <v-layout row pl-4 pt-4 sm4>
             <v-flex>
               <v-img
@@ -123,132 +123,132 @@
       </v-flex>
     </v-layout>
 
-  <!-- Version para movil -->
+    <!-- Version para movil -->
 
-  <v-layout row wrap>
-    <v-flex
-      v-for="webicultor in webicultores"
-      :key="webicultor.name"
-      xs12
-      ma-3
-      class="hidden-sm-and-up"
-    >
-      <v-card :color="webicultor.color" class="white--text">
-        <v-layout row d-block>
-          <v-flex xs12>
-            <v-img
-              :src="`${webicultor.img}`"
-              contain
-              class="perfil"
-            />
-          </v-flex>
-        </v-layout>
+    <v-layout row wrap>
+      <v-flex
+        v-for="webicultor in webicultores"
+        :key="webicultor.name"
+        xs12
+        ma-3
+        class="hidden-sm-and-up"
+      >
+        <v-card :color="webicultor.color" class="white--text">
+          <v-layout row d-block>
+            <v-flex xs12>
+              <v-img
+                :src="`${webicultor.img}`"
+                contain
+                class="perfil"
+              />
+            </v-flex>
+          </v-layout>
 
-        <v-layout row d-block>
-          <v-flex xs12>
-            <v-card-title primary-title>
-              <div>
-                <h2 class="head">
-                  {{ webicultor.headline }}
-                </h2>
-                <h1 class="name">
-                  {{ webicultor.name }}
-                </h1>
-                <p class="skills">
-                  {{ webicultor.skills }}
-                </p>
-                <p class="bio">
-                  {{ webicultor.bio }}
-                </p>
-              </div>
-            </v-card-title>
-          </v-flex>
-        </v-layout>
-        <v-divider light />
-        <v-card-actions class="pa-3 bggray">
-          <v-spacer />
-          <div>
-            <v-layout justify-center row class="icon">
-              <div v-if="webicultor.facebook" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Siguenos en Facebook"
-                  :href="`${webicultor.facebook}`"
-                >
-                  <img
-                    width="36px"
-                    alt="Siguenos en Facebook"
-                    src="~/assets/redes/face.png"
-                    border="0"
+          <v-layout row d-block>
+            <v-flex xs12>
+              <v-card-title primary-title>
+                <div>
+                  <h2 class="head">
+                    {{ webicultor.headline }}
+                  </h2>
+                  <h1 class="name">
+                    {{ webicultor.name }}
+                  </h1>
+                  <p class="skills">
+                    {{ webicultor.skills }}
+                  </p>
+                  <p class="bio">
+                    {{ webicultor.bio }}
+                  </p>
+                </div>
+              </v-card-title>
+            </v-flex>
+          </v-layout>
+          <v-divider light />
+          <v-card-actions class="pa-3 bggray">
+            <v-spacer />
+            <div>
+              <v-layout justify-center row class="icon">
+                <div v-if="webicultor.facebook" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Siguenos en Facebook"
+                    :href="`${webicultor.facebook}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.instagram" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Siguenos en Instagram"
-                  :href="`${webicultor.instagram}`"
-                >
-                  <img
-                    class=""
-                    width="36"
-                    alt="Siguenos en Instagram"
-                    src="~/assets/redes/instagram.png"
-                    border="0"
+                    <img
+                      width="36px"
+                      alt="Siguenos en Facebook"
+                      src="~/assets/redes/face.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.instagram" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Siguenos en Instagram"
+                    :href="`${webicultor.instagram}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.youtube" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en Youtube"
-                  :href="`${webicultor.youtube}`"
-                >
-                  <img
-                    width="48"
-                    class=""
-                    alt="Sigueme en Youtube"
-                    src="~/assets/redes/youtube.png"
-                    border="0"
+                    <img
+                      class=""
+                      width="36"
+                      alt="Siguenos en Instagram"
+                      src="~/assets/redes/instagram.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.youtube" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en Youtube"
+                    :href="`${webicultor.youtube}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.twitter" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en Twitter"
-                  :href="`${webicultor.twitter}`"
-                >
-                  <img
-                    width="42"
-                    class=""
-                    alt="Sigueme en Twitter"
-                    src="~/assets/redes/twitter.png"
-                    border="0"
+                    <img
+                      width="48"
+                      class=""
+                      alt="Sigueme en Youtube"
+                      src="~/assets/redes/youtube.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.twitter" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en Twitter"
+                    :href="`${webicultor.twitter}`"
                   >
-                </a>
-              </div>
-              <div v-if="webicultor.linkedIn" class="px-3 redes">
-                <a
-                  target="_blank"
-                  title="Sigueme en LinkedIn"
-                  :href="`${webicultor.linkedIn}`"
-                >
-                  <img
-                    alt="Sigueme en LinkedIn"
-                    height="40px"
-                    width="40px"
-                    src="https://www.allphincom.com/images/site/linkedin_icon_white.png"
-                    border="0"
+                    <img
+                      width="42"
+                      class=""
+                      alt="Sigueme en Twitter"
+                      src="~/assets/redes/twitter.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+                <div v-if="webicultor.linkedIn" class="px-3 redes">
+                  <a
+                    target="_blank"
+                    title="Sigueme en LinkedIn"
+                    :href="`${webicultor.linkedIn}`"
                   >
-                </a>
-              </div>
-            </v-layout>
-          </div>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+                    <img
+                      alt="Sigueme en LinkedIn"
+                      height="40px"
+                      width="40px"
+                      src="https://www.allphincom.com/images/site/linkedin_icon_white.png"
+                      border="0"
+                    >
+                  </a>
+                </div>
+              </v-layout>
+            </div>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
@@ -258,22 +258,36 @@ export default {
     return {
       webicultores: [
         {
+          name: 'Carmen Moya',
+          img:
+            'https://t2.ev.ltmcdn.com/es/posts/8/5/8/img_cultivo_y_cuidados_de_la_orquidea_negra_858_600.jpg',
+          headline: 'Community Manager',
+          skills: 'Mercadeo Digital, Direccion Cinematografica, Redes Sociales',
+          color: '#130E1A',
+          bio:
+            'Me encanta el Mercadeo, la publicidad y promocion de marcas.................................................... ................................................... .......................................................................................................................................................................................................................................................................................................................................',
+          moto: 'Sigueme!',
+          instagram: 'https://www.instagram.com/orion_gallery/',
+          facebook: 'https://www.facebook.com/carmencecilia.moya',
+          youtube: 'https://www.youtube.com/channel/UC0MxSyM9Xz4IZFYAXzwU1Xw'
+        },
+        {
           name: 'José Millan',
           img: 'https://i.ebayimg.com/images/g/n9MAAOSwNSxVBtzI/s-l300.jpg',
           headline: 'Artista Gráfico Digital',
           skills:
-            'Arte Grafico e ilustración, Edición de Videos, Desarrollo Frontend',
+            'Arte Grafico e ilustración, Edición de Video, Desarrollo Frontend',
           color: '#130E1A',
           bio:
             'Soy un artista grafico dedicado al arte digital, vivo creando proyectos desde simples bocetos hasta diseños complejos, Me dedico a crecer profesionalmente ofreciendo resultados muy creativos. Poseo la capacidad de adaptación con los requerimientos del cliente para ayudarlo a crear lo que realmete busca, soluciono las necesidades de comunicacion visual en diferentes plataformas: Desarrolo Web, indentidad corporativa, ilustración digital/tradicional, creación de contenido e imagen visual adaptada para publicidad, mediante el diseño y la creacion de graficos para fines de mercadotecnia, publicidad y editorial. Actualmente interesado en el desarrollo web de proyectos creativos de aplicaciones completas.',
           moto: 'Sigueme!',
-          instagram: 'https://www.linkedin.com/in/ronaldalonzo/',
+          instagram: 'https://www.instagram.com/orion_gallery/',
           twitter: 'https://twitter.com/RonaldCrb',
           facebook: 'https://www.facebook.com/jose.millan2',
           youtube: 'https://www.youtube.com/channel/UC0MxSyM9Xz4IZFYAXzwU1Xw'
         },
         {
-          name: 'Ron Alonzo',
+          name: 'Ronald Alonzo',
           img: 'RonHelmet.png',
           headline: 'Desarrollador Full Stack',
           skills:
