@@ -47,29 +47,29 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: 'icons/Creativos.png',
-          title: 'Arte!',
-          content: 'Arte visionaria que eleva tu estado de conciencia',
+          icon: 'icons/Creativosf.png',
+          title: 'Creativos',
+          content: 'Arte visionaria que eleva tu estado de conciencia dfdsf',
           link: 'arte'
         },
         {
           color: '#3F51B5',
-          icon: 'icons/Marketing.png',
-          title: 'Marketing!',
+          icon: 'icons/MarketingF.png',
+          title: 'Marketing',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Comunidad.png',
-          title: 'Ultimate!',
+          icon: 'icons/ComunidadF.png',
+          title: 'Comunidad',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
           link: 'comandoultimate'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Apps.png',
-          title: 'Apps!',
+          icon: 'icons/AppsF.png',
+          title: 'Apps',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
         }
@@ -92,9 +92,10 @@ export default {
   width: 100%;
 }
 .foto {
+  transform: scale(0.9);
   align-self: center;
   padding: 30px;
-  width: 200px;
+  width: 100%;
 }
 .foto::before {
   content: '';
