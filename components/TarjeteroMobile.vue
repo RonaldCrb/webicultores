@@ -70,7 +70,7 @@ export default {
           icon: 'icons/Creativos.png',
           title: 'Ultimate!',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
-          link: 'comandoultimate'
+          link: 'comunidad'
         }
       ]
     }
