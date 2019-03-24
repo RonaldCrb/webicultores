@@ -11,6 +11,7 @@
           md3
           pa-1
           ma-4
+          fill-height
         >
           <nuxt-link :to="card.link">
             <v-card dark>
@@ -47,31 +48,31 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: 'icons/Creativos.png',
-          title: 'Arte!',
+          icon: 'icons/CreativosF.png',
+          title: 'Creativos',
           content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
         },
         {
           color: '#3F51B5',
-          icon: 'icons/Creativos.png',
-          title: 'Marketing!',
+          icon: 'icons/MarketingF.png',
+          title: 'Marketing',
           content: 'Mercadeo de guerrilla para verte justo como quieres',
           link: 'marketing'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Creativos.png',
-          title: 'Apps!',
+          icon: 'icons/AppsF.png',
+          title: 'Apps',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
         },
         {
           color: '#04bbff',
-          icon: 'icons/Creativos.png',
-          title: 'Ultimate!',
+          icon: 'icons/ComunidadF.png',
+          title: 'Comunidad',
           content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
-          link: 'comandoultimate'
+          link: 'comunidad'
         }
       ]
     }
@@ -92,9 +93,23 @@ export default {
   width: 100%;
 }
 .foto {
+  transform: scale(0.9);
   align-self: center;
   padding: 30px;
   width: 100%;
+}
+.foto::before {
+  content: '';
+  top: -2px;
+  left: -2px;
+  opacity: 0;
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.8s 0.2s;
+  border: 3px solid #ff0375;
+  box-shadow: 0 0 4px #5f2ae4;
 }
 .bg {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);

@@ -34,7 +34,7 @@
             </v-icon> -->
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
+            <v-list-tile-title class="pad2" v-text="item.title" />
           </v-list-tile-content>
         </v-list-tile>
         <v-spacer />
@@ -57,7 +57,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed app height="70px" class="transparent">
+    <v-toolbar fixed app height="60px" class="transparent">
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title>
         <nuxt-link to="/">
@@ -94,29 +94,29 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'icons/Creativos.png',
+          icon: 'icons/CreativosF.png',
           title: 'Arte!',
           to: 'arte'
         },
         {
-          icon: 'icons/Creativos.png',
+          icon: 'icons/MarketingF.png',
           title: 'Marketing!',
           to: 'marketing'
         },
         {
-          icon: 'icons/Creativos.png',
+          icon: 'icons/AppsF.png',
           title: 'Apps!',
           to: 'apps'
         },
         {
-          icon: 'icons/Creativos.png',
-          title: 'Comando Ultimate',
-          to: 'comandoultimate'
+          icon: 'icons/ComunidadF.png',
+          title: 'Comunidad',
+          to: 'comunidad'
         }
       ],
       naviconfig: [
         {
-          icon: 'icons/Creativos.png',
+          icon: 'icons/CreativosF.png',
           title: 'Mini',
           task: 'miniVariant = !miniVariant'
         }
@@ -129,9 +129,10 @@ export default {
 
 <style lang="css" scoped>
 .toolbartitle {
-  padding-top: 20px;
+  padding-top: 5px;
   }
 .pad {
+  padding-bottom: 40px;
   padding-top: 15px;
   }
 .drawertitle {
@@ -144,5 +145,9 @@ export default {
 }
 .bg {
   background-image: linear-gradient(90deg, #ff0375, #04bbff, #ff0375);
+}
+.pad2
+{
+  margin-left: 10px;
 }
 </style>
