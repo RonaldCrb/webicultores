@@ -6,7 +6,6 @@
         :key="card.title"
         class="bg"
         xs12
-        sm3
         pa-1
         ma-4
       >

@@ -137,23 +137,18 @@
 
     <!-- Version para movil -->
 
-    <v-container fluid>
-      <v-layout row justify-center>
+    <v-container fluid class="hidden-sm-and-up">
+      <v-layout column justify-center>
         <v-flex
           v-for="webicultor in webicultores"
           :key="webicultor.name"
-          class="bg"
           xs12
-          pa-1
-          ma-4
           fill-height
         >
           <v-layout row wrap>
             <v-flex
-
               xs12
               ma-3
-              class="hidden-sm-and-up"
             >
               <v-card :color="webicultor.color" class="white--text">
                 <v-layout row d-block>
@@ -191,7 +186,7 @@
                   <v-spacer />
                   <div>
                     <v-layout justify-center row class="icon">
-                      <div v-if="webicultor.facebook" class="px-3 redes">
+                      <div v-if="webicultor.facebook" class="px-1 redes">
                         <a
                           target="_blank"
                           title="Siguenos en Facebook"
@@ -205,7 +200,7 @@
                           >
                         </a>
                       </div>
-                      <div v-if="webicultor.instagram" class="px-3 redes">
+                      <div v-if="webicultor.instagram" class="px-1 redes">
                         <a
                           target="_blank"
                           title="Siguenos en Instagram"
@@ -220,7 +215,7 @@
                           >
                         </a>
                       </div>
-                      <div v-if="webicultor.youtube" class="px-3 redes">
+                      <div v-if="webicultor.youtube" class="px-1 redes">
                         <a
                           target="_blank"
                           title="Sigueme en Youtube"
@@ -235,7 +230,7 @@
                           >
                         </a>
                       </div>
-                      <div v-if="webicultor.twitter" class="px-3 redes">
+                      <div v-if="webicultor.twitter" class="px-1 redes">
                         <a
                           target="_blank"
                           title="Sigueme en Twitter"
@@ -250,7 +245,7 @@
                           >
                         </a>
                       </div>
-                      <div v-if="webicultor.linkedIn" class="px-3 redes">
+                      <div v-if="webicultor.linkedIn" class="px-1 redes">
                         <a
                           target="_blank"
                           title="Sigueme en LinkedIn"

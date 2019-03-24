@@ -3,11 +3,13 @@
     <BannerGiant />
     <Bienvenida />
     <v-layout row wrap>
-      <v-flex xs12 class="hidden-sm-and-up">
-        <TarjeteroMobile />
-      </v-flex>
-      <v-flex xs12 class="hidden-xs-only">
-        <TarjeteroDesktop />
+      <v-flex xs12>
+        <div class="hidden-xs-only">
+          <TarjeteroDesktop />
+        </div>
+        <div class="hidden-sm-and-up">
+          <TarjeteroMobile />
+        </div>
       </v-flex>
       <v-flex xs12>
         <Perfiles2 />

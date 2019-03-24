@@ -65,7 +65,7 @@
             <img
               class="toolbartitle"
               src="~/assets/LogoColors.png"
-              height="70px"
+              height="45px"
             >
           </div>
         </nuxt-link>
@@ -132,9 +132,8 @@ export default {
   padding-top: 5px;
   }
 .pad {
-  padding-bottom: 40px;
-  padding-top: 15px;
-  }
+  padding-bottom: 15px;
+}
 .drawertitle {
   padding-left: 15px;
   padding-top: 10px;
