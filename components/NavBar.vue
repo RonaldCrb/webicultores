@@ -33,7 +33,7 @@
               {{ item.icon }}
             </v-icon> -->
           </v-list-tile-action>
-          <v-list-tile-content >
+          <v-list-tile-content>
             <v-list-tile-title class="pad2" v-text="item.title" />
           </v-list-tile-content>
         </v-list-tile>
@@ -110,8 +110,8 @@ export default {
         },
         {
           icon: 'icons/ComunidadF.png',
-          title: 'Comando Ultimate',
-          to: 'comandoultimate'
+          title: 'Comunidad',
+          to: 'comunidad'
         }
       ],
       naviconfig: [
@@ -129,7 +129,7 @@ export default {
 
 <style lang="css" scoped>
 .toolbartitle {
-  padding-top: 20px;
+  padding-top: 5px;
   }
 .pad {
   padding-bottom: 40px;

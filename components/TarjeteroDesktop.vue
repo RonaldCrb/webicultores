@@ -11,6 +11,7 @@
           md3
           pa-1
           ma-4
+          fill-height
         >
           <nuxt-link :to="card.link">
             <v-card dark>
@@ -47,9 +48,9 @@ export default {
       cardItems: [
         {
           color: '#ff0375',
-          icon: 'icons/Creativosf.png',
+          icon: 'icons/CreativosF.png',
           title: 'Creativos',
-          content: 'Arte visionaria que eleva tu estado de conciencia dfdsf',
+          content: 'Arte visionaria que eleva tu estado de conciencia',
           link: 'arte'
         },
         {
@@ -61,17 +62,17 @@ export default {
         },
         {
           color: '#04bbff',
-          icon: 'icons/ComunidadF.png',
-          title: 'Comunidad',
-          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
-          link: 'comandoultimate'
-        },
-        {
-          color: '#04bbff',
           icon: 'icons/AppsF.png',
           title: 'Apps',
           content: 'Apps que agradan a tus sentidos y manejan tu data',
           link: 'apps'
+        },
+        {
+          color: '#04bbff',
+          icon: 'icons/ComunidadF.png',
+          title: 'Comunidad',
+          content: 'Somos Amantes de el Ultimate Frisbee y los Trickshots',
+          link: 'comunidad'
         }
       ]
     }
