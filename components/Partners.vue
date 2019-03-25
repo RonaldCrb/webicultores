@@ -103,19 +103,20 @@ h2 {
   font-size: 50px;
   transition: 0.6s;
 }
-/* h2:hover {
-  text-shadow: 2px 2px #5f2ae4;
-  letter-spacing: 0px;
-  letter-spacing: 10px;
-  text-shadow: 0 0 12px #5f2ae4;
-  font-size: 40px;
-  color: white;
-} */
+h2:hover {
+  letter-spacing: 12px;
+}
 .transparent {
-  border-color: 4px 4px red;
+  box-shadow: 0 0 8px solid red;
+  transform: scale(0.5);
   padding-top: 100px;
 }
+.transparent:hover {
+  transform: scale(1);
+}
 p {
+  border-style: none;
+  text-decoration: none;
   font-size: 20px;
   text-align: center;
   padding-bottom: 40px;
