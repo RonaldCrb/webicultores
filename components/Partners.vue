@@ -1,9 +1,12 @@
 <template>
-  <v-container mb-5>
+  <v-container flex row mb-5>
     <v-layout row wrap justify-center>
-      <h2>NUESTROS AMIGOS</h2>
+      <div flex fluid justify-center class="">
+        <h2>NUESTROS ALIADOS</h2>
+        <p>Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitad</p>
+      </div>
     </v-layout>
-    <v-layout row wrap justify-center>
+    <v-layout flex fluid class="color" row justify-center>
       <v-flex
         v-for="(amigo, i) in amigos"
         :key="i"
@@ -67,13 +70,15 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  transition: 0.8s;
 }
 .fecha {
   text-align: center;
 }
 .titulo {
+  text-decoration: none;
+  color: black;
   text-align: center;
 }
 .ciudad {
@@ -81,5 +86,38 @@ export default {
 }
 .eventos {
   text-align: center;
+}
+.color {
+  display: flex;
+  max-width: 100%;
+  height: 400px;
+  background-color: white;
+}
+h2 {
+  text-align: center;
+  padding-top: 100px;
+  letter-spacing: 10px;
+  text-shadow: 0 0 12px #5f2ae4;
+  /* color: #130e1a; */
+  color: white;
+  font-size: 50px;
+  transition: 0.6s;
+}
+/* h2:hover {
+  text-shadow: 2px 2px #5f2ae4;
+  letter-spacing: 0px;
+  letter-spacing: 10px;
+  text-shadow: 0 0 12px #5f2ae4;
+  font-size: 40px;
+  color: white;
+} */
+.transparent {
+  border-color: 4px 4px red;
+  padding-top: 100px;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 40px;
 }
 </style>

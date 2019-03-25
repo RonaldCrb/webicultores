@@ -2,6 +2,9 @@
   <div>
     <v-container fluid>
       <v-layout row align-center justify-center column>
+        <h1 class="titulo">
+          Webicultores Oficiales
+        </h1>
         <v-flex
           v-for="webicultor in webicultores"
           :key="webicultor.name"
@@ -51,7 +54,7 @@
                 <v-card-actions class="pa-3 bggray">
                   <v-spacer />
                   <div>
-                    <v-layout justify-center row class="icon fondo">
+                    <v-layout justify-center row class="icon">
                       <div v-if="webicultor.facebook" class="px-3 redes">
                         <a
                           target="_blank"
@@ -279,7 +282,7 @@ export default {
       webicultores: [
         {
           name: 'Carmen Moya',
-          img: 'https://i.ebayimg.com/images/g/n9MAAOSwNSxVBtzI/s-l300.jpg',
+          img: 'perfiles/cc.jpg',
           headline: 'Administracción de Mercadeo',
           skills: 'Redes sociales, Producción audivisual, Mercadeo',
           color: '#1B0414',
@@ -291,7 +294,7 @@ export default {
         },
         {
           name: 'José Millan',
-          img: 'https://i.ebayimg.com/images/g/n9MAAOSwNSxVBtzI/s-l300.jpg',
+          img: 'perfiles/jm.jpg',
           headline: 'Artista Gráfico Digital',
           skills:
             'Arte Grafico e ilustración, Edición de Video, Desarrollo Frontend',
@@ -300,7 +303,6 @@ export default {
             'Soy un artista grafico dedicado al arte digital, vivo creando proyectos desde simples bocetos hasta diseños complejos, Me dedico a crecer profesionalmente ofreciendo resultados muy creativos. Poseo la capacidad de adaptación con los requerimientos del cliente para ayudarlo a crear lo que realmete busca, soluciono las necesidades de comunicacion visual en diferentes plataformas: Desarrolo Web, indentidad corporativa, ilustración digital/tradicional, creación de contenido e imagen visual adaptada para publicidad, mediante el diseño y la creacion de graficos para fines de mercadotecnia, publicidad y editorial. Actualmente interesado en el desarrollo web de proyectos creativos de aplicaciones completas.',
           moto: 'Sigueme!',
           instagram: 'https://www.instagram.com/ismrnobody/?hl=es-la',
-          twitter: 'https://twitter.com',
           facebook: 'https://www.facebook.com/jose.millan2',
           youtube: 'https://www.youtube.com'
         },
@@ -330,6 +332,7 @@ export default {
   justify-content: center;
 }
 .perfil {
+  filter: grayscale(1);
   border-style: inset;
   justify-content: center;
   padding-top: 20px;
@@ -350,9 +353,12 @@ export default {
   position: absolute;
   border-radius: 50%;
   border: 3px solid #ff0375;
-  transition: 0.8s 0.2s;
-  box-shadow: 0 0 4px #5f2ae4;
+  transition: 0.8s 0.4s;
   opacity: 1;
+}
+.perfil:hover {
+  filter: grayscale(0);
+  box-shadow: 0 0 4px #5f2ae4;
 }
 .perfil::before {
   content: '';
@@ -363,7 +369,6 @@ export default {
   height: 165px;
   position: absolute;
   border-radius: 50%;
-  transition: 0.8s 0.2s;
   border: 3px solid #ff0375;
   box-shadow: 0 0 4px #5f2ae4;
 }
@@ -434,5 +439,15 @@ export default {
 .fondo:hover:before {
   mix-blend-mode: lighten;
   opacity: 0.2;
+}
+.titulo {
+  font-size: 60px;
+  text-shadow: 4px 4px #5f2ae4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica' fantasy;
+  font-weight: bolder;
+  /* background-color: black; */
+  padding-top: 140px;
 }
 </style>
