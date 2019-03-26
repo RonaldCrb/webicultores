@@ -2,6 +2,11 @@
   <div>
     <v-container fluid>
       <v-layout row justify-center>
+      <h1 class="titulo">
+        Nuestros Servicios
+      </h1>
+    </v-layout>
+      <v-layout row justify-center>
         <v-flex
           v-for="card in cardItems"
           :key="card.title"
@@ -113,5 +118,15 @@ export default {
 }
 .bg {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
+}
+.titulo {
+  font-size: 60px;
+  text-shadow: 4px 4px #5f2ae4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica' fantasy;
+  font-weight: bolder;
+  /* background-color: black; */
+  padding-top: 140px;
 }
 </style>

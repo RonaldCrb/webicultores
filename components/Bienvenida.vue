@@ -1,7 +1,12 @@
 <template>
   <div>
     <v-container fluid>
-      <v-layout row justify-center>
+      <v-layout row justify-center wrap>
+        <v-flex xs12>
+          <h1 class="py-1 centro titulo">
+            SERVICIO DE INTEGRACION DE MARKETING DIGITAL
+          </h1>
+        </v-flex>
         <v-flex
           class="bg"
           xs12
@@ -11,13 +16,12 @@
           fill-height
         >
           <v-card dark>
+            <v-layout row justify-center>
+
             <v-card-title primary-title>
-              <v-flex>
-                <h1 class="py-1 centro titulo">
-                  SERVICIO DE INTEGRACION DE MARKETING DIGITAL
-                </h1>
-              </v-flex>
+              <h3 class="como centro">COMO LO HACEMOS?</h3>
             </v-card-title>
+          </v-layout>
             <v-card-text class="centro">
               <v-container fluid>
                 <v-layout row wrap>
@@ -65,11 +69,21 @@ export default {}
   width: 100%;
 }
 .titulo {
-  font-size: 2em;
+  font-size: 60px;
+  text-shadow: 4px 4px #5f2ae4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica' fantasy;
+  font-weight: bolder;
+  /* background-color: black; */
+  padding-top: 140px;
 }
 .mision {
   padding-top: 10px;
   font-size: 1.4em;
+}
+.como {
+  font-size: 2em;
 }
 .foto::before {
   content: '';
