@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-layout row align-center justify-center column>
         <h1 class="titulo">
-          Webicultores Oficiales
+          Conoce a los Webicultores
         </h1>
         <v-flex
           v-for="webicultor in webicultores"
@@ -308,7 +308,7 @@ export default {
         },
         {
           name: 'Ronald Alonzo',
-          img: 'RonHelmet.png',
+          img: 'perfiles/ron.png',
           headline: 'Desarrollador Full Stack',
           skills:
             'Desarrollo frontend y backend con Javascript, SQL, Firebase, Ruby, Python',

@@ -1,5 +1,6 @@
 <template>
-  <v-container flex row mb-5>
+  <div class="bg">
+
     <v-layout row wrap justify-center>
       <div flex fluid justify-center class="">
         <h2>NUESTROS ALIADOS</h2>
@@ -32,7 +33,7 @@
         </a>
       </v-flex>
     </v-layout>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -66,6 +67,12 @@ export default {
 </script>
 
 <style scoped>
+.bg {
+  background-color: #ff0375;
+}
+.bg2 {
+  background-color: #ff0375;
+}
 .fotos {
   display: block;
   margin-left: auto;

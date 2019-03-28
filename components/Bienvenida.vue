@@ -17,11 +17,12 @@
         >
           <v-card dark>
             <v-layout row justify-center>
-
-            <v-card-title primary-title>
-              <h3 class="como centro">COMO LO HACEMOS?</h3>
-            </v-card-title>
-          </v-layout>
+              <v-card-title primary-title>
+                <h3 class="como centro">
+                  COMO LO HACEMOS?
+                </h3>
+              </v-card-title>
+            </v-layout>
             <v-card-text class="centro">
               <v-container fluid>
                 <v-layout row wrap>

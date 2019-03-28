@@ -2,10 +2,10 @@
   <div>
     <v-container fluid>
       <v-layout row justify-center>
-      <h1 class="titulo">
-        Nuestros Servicios
-      </h1>
-    </v-layout>
+        <h1 class="titulo">
+          Te Ofrecemos
+        </h1>
+      </v-layout>
       <v-layout row justify-center>
         <v-flex
           v-for="card in cardItems"
