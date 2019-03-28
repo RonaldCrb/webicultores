@@ -1,30 +1,32 @@
 <template>
   <div class="bg">
     <v-layout row wrap justify-center>
-      <h2 class="titulo">
-        NUESTROS ALIADOS
-      </h2>
-      <p>Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat</p>
+      <v-flex xs12>
+        <h2 class="titulo">
+          NUESTROS ALIADOS
+        </h2>
+        <p class="contenido">Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat</p>
+      </v-flex>
       <v-flex
         v-for="(amigo, i) in amigos"
         :key="i"
         xs12
         sm6
         md3
-        pa-2
+        px-2
         justify-center
         class="color"
       >
         <a :href="`${amigo.link}`">
           <v-card class="transparent" flat>
-            <v-card-media
+            <v-img
               contain
               class="fotos"
               :src="`${amigo.src}`"
               :alt="amigo.titulo"
-            />
+            ></v-img>
             <v-card-text>
-              <p class="titulo">
+              <p class="links">
                 {{ amigo.titulo }}
               </p>
             </v-card-text>
@@ -69,9 +71,6 @@ export default {
 .bg {
   background-color: #ff0375;
 }
-.bg2 {
-  background-color: #ff0375;
-}
 .fotos {
   display: block;
   margin-left: auto;
@@ -90,7 +89,9 @@ export default {
   letter-spacing: 2px;
   font-family: 'Helvetica' fantasy;
   font-weight: bolder;
-  /* background-color: black; */
+}
+.contenido {
+  font-size: 1em;
 }
 .ciudad {
   text-align: center;
@@ -103,6 +104,10 @@ export default {
   max-width: 100%;
   height: 400px;
   background-color: white;
+}
+a {
+  text-decoration-color: black;
+  color: black;
 }
 h2 {
   text-align: center;
@@ -131,5 +136,14 @@ p {
   font-size: 20px;
   text-align: center;
   padding-bottom: 40px;
+}
+.links {
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 4px 4px #5f2ae4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica' fantasy;
+  font-weight: bolder;
 }
 </style>

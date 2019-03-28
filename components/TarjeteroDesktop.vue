@@ -1,30 +1,30 @@
 <template>
   <div>
     <v-container fluid>
+
       <v-layout row justify-center>
         <h1 class="titulo">
           Te Ofrecemos
         </h1>
       </v-layout>
+
       <v-layout row justify-center>
         <v-flex
           v-for="card in cardItems"
           :key="card.title"
           class="bg"
-          xs12
           sm6
           md3
           pa-1
-          ma-4
+          ma-1
           fill-height
         >
           <nuxt-link :to="card.link">
             <v-card dark>
-              <img class="foto" :src="`${card.icon}`" :hint="card.content">
-
+              <v-img class="foto" :src="`${card.icon}`" :hint="card.content"></v-img>
               <v-card-title primary-title>
                 <v-container>
-                  <v-layout row wrap>
+                  <v-layout row>
                     <v-flex>
                       <h1 class="centro">
                         {{ card.title }}
@@ -120,13 +120,11 @@ export default {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
 }
 .titulo {
-  font-size: 60px;
+  font-size: 3em;
   text-shadow: 4px 4px #5f2ae4;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Helvetica' fantasy;
   font-weight: bolder;
-  /* background-color: black; */
-  padding-top: 140px;
 }
 </style>
