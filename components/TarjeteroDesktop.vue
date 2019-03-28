@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-container fluid>
-
       <v-layout row justify-center>
         <h1 class="titulo">
           Te Ofrecemos
@@ -21,7 +20,7 @@
         >
           <nuxt-link :to="card.link">
             <v-card dark>
-              <v-img class="foto" :src="`${card.icon}`" :hint="card.content"></v-img>
+              <v-img class="foto" :src="`${card.icon}`" :hint="card.content" />
               <v-card-title primary-title>
                 <v-container>
                   <v-layout row>
@@ -98,33 +97,31 @@ export default {
   width: 100%;
 }
 .foto {
-  transform: scale(0.9);
+  transform: rotate(0deg) scale(0.7);
+  transition: 0.4s;
   align-self: center;
   padding: 30px;
   width: 100%;
 }
-.foto::before {
-  content: '';
-  top: -2px;
-  left: -2px;
-  opacity: 0;
-  width: 165px;
-  height: 165px;
-  position: absolute;
-  border-radius: 50%;
-  transition: 0.8s 0.2s;
-  border: 3px solid #ff0375;
-  box-shadow: 0 0 4px #5f2ae4;
+.foto:hover {
+  transform: rotate(360deg) scale(0.9);
 }
 .bg {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);
 }
 .titulo {
+  text-align: center;
   font-size: 3em;
   text-shadow: 4px 4px #5f2ae4;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Helvetica' fantasy;
   font-weight: bolder;
+  margin-bottom: 40px;
+  color: white;
+  transition: 0.6s;
+}
+.titulo:hover {
+  letter-spacing: 12px;
 }
 </style>

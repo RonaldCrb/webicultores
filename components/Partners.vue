@@ -5,7 +5,13 @@
         <h2 class="titulo">
           NUESTROS ALIADOS
         </h2>
-        <p class="contenido">Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat</p>
+        <p class="contenido hidden-sm-and-up">
+          Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat
+        </p>
+        <p class="contenido2 hidden-xs-only">
+          Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat
+        </p>
+
       </v-flex>
       <v-flex
         v-for="(amigo, i) in amigos"
@@ -14,24 +20,25 @@
         sm6
         md3
         px-2
+        fill-height
         justify-center
         class="color"
       >
-        <a :href="`${amigo.link}`">
-          <v-card class="transparent" flat>
+        <v-card class="transparent" flat>
+          <a class="aliados" :href="`${amigo.link}`">
             <v-img
               contain
               class="fotos"
               :src="`${amigo.src}`"
               :alt="amigo.titulo"
-            ></v-img>
+            />
             <v-card-text>
-              <p class="links">
+              <span class="links">
                 {{ amigo.titulo }}
-              </p>
+              </span>
             </v-card-text>
-          </v-card>
-        </a>
+          </a>
+        </v-card>
       </v-flex>
     </v-layout>
   </div>
@@ -43,7 +50,7 @@ export default {
     dialog: false,
     amigos: [
       {
-        titulo: 'El Reto de Vane Herrera',
+        titulo: 'RVH',
         link: 'https://lit-chamber-21738.herokuapp.com/',
         src: 'amigos/piña.png'
       },
@@ -71,27 +78,57 @@ export default {
 .bg {
   background-color: #ff0375;
 }
+.aliados {
+  text-decoration-line: none;
+}
+.transparent {
+}
+.fotos:hover {
+  transform: scale(1);
+}
 .fotos {
+  box-shadow: 0 0 8px solid red;
+  transform: scale(0.5);
   display: block;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  height: 150px;
-  transition: 0.8s;
+  height: 200px;
+  transition: 0.4s;
 }
 .fecha {
   text-align: center;
 }
 .titulo {
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   text-shadow: 4px 4px #5f2ae4;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Helvetica' fantasy;
   font-weight: bolder;
+  padding-top: 40px;
+  color: white;
+  transition: 0.6s;
+}
+.titulo:hover {
+  letter-spacing: 12px;
 }
 .contenido {
-  font-size: 1em;
+  border-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 1.5em;
+}
+.contenido2 {
+  border-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 2em;
 }
 .ciudad {
   text-align: center;
@@ -105,44 +142,11 @@ export default {
   height: 400px;
   background-color: white;
 }
-a {
-  text-decoration-color: black;
-  color: black;
-}
-h2 {
-  text-align: center;
-  padding-top: 100px;
-  letter-spacing: 10px;
-  text-shadow: 0 0 12px #5f2ae4;
-  /* color: #130e1a; */
-  color: white;
-  font-size: 50px;
-  transition: 0.6s;
-}
-h2:hover {
-  letter-spacing: 12px;
-}
-.transparent {
-  box-shadow: 0 0 8px solid red;
-  transform: scale(0.5);
-  padding-top: 100px;
-}
-.transparent:hover {
-  transform: scale(1);
-}
-p {
-  border-style: none;
-  text-decoration: none;
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 40px;
-}
 .links {
   text-align: center;
-  font-size: 3em;
-  text-shadow: 4px 4px #5f2ae4;
+  font-size: 2em;
+  color: black;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-family: 'Helvetica' fantasy;
   font-weight: bolder;
 }

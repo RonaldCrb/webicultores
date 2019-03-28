@@ -1,5 +1,10 @@
 <template>
   <v-container fluid>
+    <v-layout row justify-center>
+      <h1 class="titulo">
+        Te Ofrecemos
+      </h1>
+    </v-layout>
     <v-layout row wrap>
       <v-flex
         v-for="card in cardItems"
@@ -17,7 +22,7 @@
             <v-container>
               <v-layout row wrap>
                 <v-flex>
-                  <h1 class="centro titulo">
+                  <h1 class="centro titulo2">
                     {{ card.title }}
                   </h1>
                 </v-flex>
@@ -79,15 +84,42 @@ export default {
 
 <style scoped>
 .foto {
+  transform: scale(0.7);
+  transition: 0.4s;
   align-self: center;
   padding: 30px;
   width: 100%;
+}
+.foto:hover {
+  transform: scale(0.9);
 }
 .centro {
   text-align: center;
 }
 .titulo {
+  text-align: center;
   font-size: 2em;
+  text-shadow: 4px 4px #5f2ae4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica' fantasy;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  color: white;
+  transition: 0.6s;
+}
+.titulo2 {
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 2px 2px #ff0375;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica' fantasy;
+  font-weight: bolder;
+  color: white;
+}
+.titulo:hover {
+  letter-spacing: 8px;
 }
 .contenido {
   font-size: 1.5em;

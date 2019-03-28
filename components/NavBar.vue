@@ -12,11 +12,12 @@
         <div v-if="miniVariant === false">
           <img class="drawertitle" src="~/assets/LogoColors.png" height="55">
         </div>
-        <div v-if="miniVariant === true" class="toolbartitle">
+        <div v-if="miniVariant === true" class="pt-2 toolbartitle">
           <WebiLogo />
         </div>
       </nuxt-link>
-      <v-list>
+      <v-divider dark></v-divider>
+      <v-list class="pt-5">
         <v-list-tile
           v-for="item in items"
           :key="item.title"
@@ -90,7 +91,7 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: false,
+      drawer: true,
       fixed: false,
       items: [
         {
@@ -121,7 +122,7 @@ export default {
           task: 'miniVariant = !miniVariant'
         }
       ],
-      miniVariant: true
+      miniVariant: false
     }
   }
 }
@@ -132,7 +133,7 @@ export default {
   padding-top: 5px;
   }
 .pad {
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .drawertitle {
   padding-left: 15px;
