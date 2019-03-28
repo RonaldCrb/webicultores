@@ -70,7 +70,7 @@ export default {}
   width: 100%;
 }
 .titulo {
-  font-size: 60px;
+  font-size: 2em;
   text-shadow: 4px 4px #5f2ae4;
   text-transform: uppercase;
   letter-spacing: 2px;

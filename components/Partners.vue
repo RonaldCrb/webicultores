@@ -1,13 +1,10 @@
 <template>
   <div class="bg">
-
     <v-layout row wrap justify-center>
-      <div flex fluid justify-center class="">
-        <h2>NUESTROS ALIADOS</h2>
-        <p>Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat</p>
-      </div>
-    </v-layout>
-    <v-layout flex fluid class="color" row justify-center>
+      <h2 class="titulo">
+        NUESTROS ALIADOS
+      </h2>
+      <p>Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat</p>
       <v-flex
         v-for="(amigo, i) in amigos"
         :key="i"
@@ -15,6 +12,8 @@
         sm6
         md3
         pa-2
+        justify-center
+        class="color"
       >
         <a :href="`${amigo.link}`">
           <v-card class="transparent" flat>
@@ -84,9 +83,14 @@ export default {
   text-align: center;
 }
 .titulo {
-  text-decoration: none;
-  color: black;
   text-align: center;
+  font-size: 2em;
+  text-shadow: 4px 4px #5f2ae4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica' fantasy;
+  font-weight: bolder;
+  /* background-color: black; */
 }
 .ciudad {
   text-align: center;
