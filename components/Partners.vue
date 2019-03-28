@@ -4,7 +4,7 @@
     <v-layout row wrap justify-center>
       <div flex fluid justify-center class="">
         <h2>NUESTROS ALIADOS</h2>
-        <p>Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitad</p>
+        <p>Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat</p>
       </div>
     </v-layout>
     <v-layout flex fluid class="color" row justify-center>
