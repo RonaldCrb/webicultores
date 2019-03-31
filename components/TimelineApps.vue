@@ -46,13 +46,12 @@ export default {
         icon: 'important_devices',
         color: '#ff0375',
         image: 'http://tododeredes.mx/wp-content/uploads/Responsive1.png',
-        title: 'Aplicaciones Progresivas',
-        content: `Las aplicaciones web progresivas son una evolución natural de
-        las aplicaciones web que difuminan la barrera entre la web y las aplicaciones,
-        pudiendo realizar tareas que generalmente solo las aplicaciones nativas
-        podían llevar a cabo. Algunos ejemplos son las notificaciones, el funcionamiento
-        sin conexión a Internet o la posibilidad de probar una versión más ligera
-        antes de bajarte una aplicación nativa de verdad.`
+        title: 'Aplicaciones Universales',
+        content: `Ya sea usando o aprendiendo JavaScript en general, seguramente
+        hayas escuchado el término Aplicaciones universales o Aplicaciones isomórficas
+        y si estás aprendiendo JS probablemente te preguntes qué significa. Una
+        aplicación universal es aquella que comparte todo (o casi todo) su código
+        entre el cliente y el servidor.`
       },
       {
         icon: 'list',

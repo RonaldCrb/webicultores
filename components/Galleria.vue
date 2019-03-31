@@ -3,17 +3,16 @@
     <v-flex xs12 sm6 pt-5 pl-4>
       <v-card>
         <v-container grid-list-sm fluid>
-          <v-layout row wrap>
+          <v-layout row wrap justify-center>
             <v-flex
-              v-for="n in 9"
-              :key="n"
+              v-for="(pieza, i) in coleccion"
+              :key="i"
               xs4
               d-flex
             >
               <v-card flat tile class="d-flex">
                 <v-img
-                  :src="`~/assets/banners/bannerC.jpg${n * 5 + 10}`"
-                  :lazy-src="`~/assets/banners/bannerC.jpg${n * 5 + 10}`"
+                  :src="`${pieza.src}`"
                   aspect-ratio="1"
                   class="grey lighten-2"
                 >
@@ -36,3 +35,28 @@
     </v-flex>
   </v-layout>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      coleccion: [
+        // Colocar las imagenes de la galeria en la carpeta static/galeria
+        // y referenciarlas como (EJ 'galeria/imagen1.png')
+        { src: 'icons/AppsF.png' },
+        { src: 'icons/ComunidadF.png' },
+        { src: 'icons/CreativosF.png' },
+        { src: 'icons/MarketingF.png' },
+        { src: 'icons/AppsF.png' },
+        { src: 'icons/ComunidadF.png' },
+        { src: 'icons/CreativosF.png' },
+        { src: 'icons/MarketingF.png' },
+        { src: 'icons/AppsF.png' },
+        { src: 'icons/ComunidadF.png' },
+        { src: 'icons/CreativosF.png' },
+        { src: 'icons/MarketingF.png' }
+      ]
+    }
+  }
+}
+</script>
