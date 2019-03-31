@@ -14,6 +14,7 @@
                 <v-img
                   :src="`${pieza.src}`"
                   aspect-ratio="1"
+                  :alt="`${pieza.titulo}`"
                   class="grey lighten-2"
                 >
                   <template v-slot:placeholder>
@@ -43,18 +44,18 @@ export default {
       coleccion: [
         // Colocar las imagenes de la galeria en la carpeta static/galeria
         // y referenciarlas como (EJ 'galeria/imagen1.png')
-        { src: 'icons/AppsF.png' },
-        { src: 'icons/ComunidadF.png' },
-        { src: 'icons/CreativosF.png' },
-        { src: 'icons/MarketingF.png' },
-        { src: 'icons/AppsF.png' },
-        { src: 'icons/ComunidadF.png' },
-        { src: 'icons/CreativosF.png' },
-        { src: 'icons/MarketingF.png' },
-        { src: 'icons/AppsF.png' },
-        { src: 'icons/ComunidadF.png' },
-        { src: 'icons/CreativosF.png' },
-        { src: 'icons/MarketingF.png' }
+        { src: 'icons/AppsF.png', titulo: 'apps' },
+        { src: 'icons/ComunidadF.png', titulo: 'comunidad' },
+        { src: 'icons/CreativosF.png', titulo: 'creativos' },
+        { src: 'icons/MarketingF.png', titulo: 'marketing' },
+        { src: 'icons/AppsF.png', titulo: 'apps' },
+        { src: 'icons/ComunidadF.png', titulo: 'comunidad' },
+        { src: 'icons/CreativosF.png', titulo: 'creativos' },
+        { src: 'icons/MarketingF.png', titulo: 'marketing' },
+        { src: 'icons/AppsF.png', titulo: 'apps' },
+        { src: 'icons/ComunidadF.png', titulo: 'comunidad' },
+        { src: 'icons/CreativosF.png', titulo: 'creativos' },
+        { src: 'icons/MarketingF.png', titulo: 'marketing' }
       ]
     }
   }
