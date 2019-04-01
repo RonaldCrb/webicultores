@@ -1,34 +1,19 @@
 <template>
-  <v-layout>
-    <v-flex xs12 sm6 pt-5 pl-4>
+  <v-layout justify-center>
+    <v-flex xs10 pt-5>
       <v-card>
-        <v-container grid-list-sm fluid>
+        <v-container grid-list-sm>
           <v-layout row wrap justify-center>
             <v-flex
               v-for="(pieza, i) in coleccion"
               :key="i"
               xs4
-              d-flex
             >
-              <v-card flat tile class="d-flex">
-                <v-img
-                  :src="`${pieza.src}`"
-                  aspect-ratio="1"
-                  :alt="`${pieza.titulo}`"
-                  class="grey lighten-2"
-                >
-                  <template v-slot:placeholder>
-                    <v-layout
-                      fill-height
-                      align-center
-                      justify-center
-                      ma-0
-                    >
-                      <v-progress-circular indeterminate color="grey lighten-5" />
-                    </v-layout>
-                  </template>
-                </v-img>
-              </v-card>
+              <DialogoGaleria
+                :src="`${pieza.src}`"
+                :titulo="`${pieza.titulo}`"
+                :color="`${pieza.color}`"
+              />
             </v-flex>
           </v-layout>
         </v-container>
@@ -38,26 +23,27 @@
 </template>
 
 <script>
+import DialogoGaleria from '@/components/DialogoGaleria.vue'
 export default {
+  components: {
+    DialogoGaleria
+  },
   data() {
     return {
       coleccion: [
         // Colocar las imagenes de la galeria en la carpeta static/galeria
         // y referenciarlas como (EJ 'galeria/imagen1.png')
-        { src: 'icons/AppsF.png', titulo: 'apps' },
-        { src: 'icons/ComunidadF.png', titulo: 'comunidad' },
-        { src: 'icons/CreativosF.png', titulo: 'creativos' },
-        { src: 'icons/MarketingF.png', titulo: 'marketing' },
-        { src: 'icons/AppsF.png', titulo: 'apps' },
-        { src: 'icons/ComunidadF.png', titulo: 'comunidad' },
-        { src: 'icons/CreativosF.png', titulo: 'creativos' },
-        { src: 'icons/MarketingF.png', titulo: 'marketing' },
-        { src: 'icons/AppsF.png', titulo: 'apps' },
-        { src: 'icons/ComunidadF.png', titulo: 'comunidad' },
-        { src: 'icons/CreativosF.png', titulo: 'creativos' },
-        { src: 'icons/MarketingF.png', titulo: 'marketing' }
+        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' },
+        { src: 'icons/AppsF.png', color: '#000', titulo: 'apps' },
+        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' },
+        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' },
+        { src: 'icons/AppsF.png', color: '#000', titulo: 'apps' },
+        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' }
       ]
     }
   }
 }
 </script>
+
+<style scoped>
+</style>

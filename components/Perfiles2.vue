@@ -448,6 +448,5 @@ export default {
   font-family: 'Helvetica' fantasy;
   font-weight: bolder;
   /* background-color: black; */
-  padding-top: 140px;
 }
 </style>

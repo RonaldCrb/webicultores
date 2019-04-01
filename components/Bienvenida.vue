@@ -16,6 +16,13 @@
                 <h1 class="py-1 centro titulo">
                   SERVICIO DE INTEGRACION DE MARKETING DIGITAL
                 </h1>
+                <p class="webicultura">
+                  La webicultura es un concepto que desarrollamos y practicamos
+                  todos los dias, y lo definimos como el proceso diario de resolver
+                  problemas de forma creativa. En este concepto se mezclan el arte
+                  con la ciencia, la ingenieria con la artesania, la realidad con la
+                  creatividad;
+                </p>
               </v-flex>
             </v-card-title>
             <v-card-text class="centro">
@@ -50,8 +57,11 @@ export default {}
 
 <style scoped>
 .centro {
-  margin-top: -20px;
   text-align: center;
+}
+.webicultura {
+  text-align: center;
+  font-size: 1.4em;
 }
 .centroimg {
   align-self: center;
@@ -68,7 +78,6 @@ export default {}
   font-size: 2em;
 }
 .mision {
-  padding-top: 10px;
   font-size: 1.4em;
 }
 .foto::before {
