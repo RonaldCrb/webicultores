@@ -13,11 +13,7 @@
         </v-container>
         <v-card-title>
           <div>
-            <span class="intro">La webicultura es un concepto que desarrollamos y practicamos
-              todos los dias, y lo definimos como el proceso diario de resolver
-              problemas de forma creativa. En este concepto se mezclan el arte
-              con la ciencia, la ingenieria con la artesania, la realidad con la
-              creatividad; Creamos aplicaciones que resuelven problemas reales
+            <span class="intro">Creamos aplicaciones que resuelven problemas reales
               para personas y empresas reales, ponemos las herramientas mas
               modernas en las manos de los Webicultores emergentes con las ideas
               mas creativas y elegantes</span><br>

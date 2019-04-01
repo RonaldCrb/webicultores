@@ -6,9 +6,7 @@
           v-for="item in items"
           :key="item.title"
           :color="item.color"
-          :icon="item.icon"
           fill-dot
-          large
           dark
         >
           <v-card :color="item.color">
