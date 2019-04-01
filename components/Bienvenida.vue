@@ -16,15 +16,6 @@
           fill-height
         >
           <v-card dark>
-<<<<<<< HEAD
-            <v-layout row justify-center>
-              <v-card-title primary-title>
-                <h3 class="como centro">
-                  COMO LO HACEMOS?
-                </h3>
-              </v-card-title>
-            </v-layout>
-=======
             <v-card-title primary-title>
               <v-flex>
                 <h1 class="py-1 centro titulo">
@@ -39,7 +30,6 @@
                 </p>
               </v-flex>
             </v-card-title>
->>>>>>> creativos
             <v-card-text class="centro">
               <v-container fluid>
                 <v-layout row wrap>
