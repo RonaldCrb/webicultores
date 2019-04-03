@@ -16,10 +16,10 @@
           <WebiLogo />
         </div>
       </nuxt-link>
-      <v-divider dark></v-divider>
+      <v-divider dark />
       <v-list class="pt-5">
         <v-list-tile
-          v-for="item in items"
+          v-for="item in navegacion"
           :key="item.title"
           :to="item.to"
           router
@@ -91,38 +91,17 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: true,
+      drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'icons/CreativosF.png',
-          title: 'Arte!',
-          to: 'arte'
-        },
-        {
-          icon: 'icons/MarketingF.png',
-          title: 'Marketing!',
-          to: 'marketing'
-        },
-        {
-          icon: 'icons/AppsF.png',
-          title: 'Apps!',
-          to: 'apps'
-        },
-        {
-          icon: 'icons/ComunidadF.png',
-          title: 'Comunidad',
-          to: 'comunidad'
-        }
-      ],
-      naviconfig: [
-        {
-          icon: 'icons/CreativosF.png',
-          title: 'Mini',
-          task: 'miniVariant = !miniVariant'
-        }
-      ],
-      miniVariant: false
+      miniVariant: true
+    }
+  },
+  computed: {
+    navegacion() {
+      return this.$store.state.navbar.navegacion
+    },
+    naviconfig() {
+      return this.$store.state.navbar.naviconfig
     }
   }
 }

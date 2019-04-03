@@ -29,6 +29,9 @@ module.exports = {
     ]
   },
 
+  // prueba de middleware
+  serverMiddleware: ['~/api/index'],
+
   /*
    ** Customize the progress-bar color
    */

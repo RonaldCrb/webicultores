@@ -28,6 +28,25 @@
 
 <script>
 export default {
-  props: ['src', 'alt', 'color']
+  props: {
+    src: {
+      type: String,
+      default: 'icons/AppsF.png'
+    },
+    alt: {
+      type: String,
+      default: 'Webicultores.com'
+    },
+    color: {
+      type: String,
+      default: '#000'
+    }
+  },
+  data() {
+    return {
+      dialog: false,
+      titulo: ''
+    }
+  }
 }
 </script>

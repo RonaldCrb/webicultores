@@ -28,18 +28,9 @@ export default {
   components: {
     DialogoGaleria
   },
-  data() {
-    return {
-      coleccion: [
-        // Colocar las imagenes de la galeria en la carpeta static/galeria
-        // y referenciarlas como (EJ 'galeria/imagen1.png')
-        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' },
-        { src: 'icons/AppsF.png', color: '#000', titulo: 'apps' },
-        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' },
-        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' },
-        { src: 'icons/AppsF.png', color: '#000', titulo: 'apps' },
-        { src: 'icons/AppsF.png', color: '#fff', titulo: 'apps' }
-      ]
+  computed: {
+    coleccion() {
+      return this.$store.state.galeria.coleccion
     }
   }
 }

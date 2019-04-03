@@ -11,7 +11,6 @@
         <p class="contenido2 hidden-xs-only">
           Habitantes de nuestro ecosistema webicultor, desde la raiz hemos integrado a estas Apps aqui en nuestro habitat
         </p>
-
       </v-flex>
       <v-flex
         v-for="(amigo, i) in amigos"
@@ -47,30 +46,13 @@
 <script>
 export default {
   data: () => ({
-    dialog: false,
-    amigos: [
-      {
-        titulo: 'RVH',
-        link: 'https://lit-chamber-21738.herokuapp.com/',
-        src: 'amigos/piña.png'
-      },
-      {
-        titulo: 'Vaper Anaco',
-        link: 'https://lit-springs-89652.herokuapp.com/',
-        src: 'amigos/VaperAnaco.png'
-      },
-      {
-        titulo: 'Jartate',
-        link: '',
-        src: ''
-      },
-      {
-        titulo: 'CDlogs',
-        link: '',
-        src: 'amigos/CDlogs.png'
-      }
-    ]
-  })
+    dialog: false
+  }),
+  computed: {
+    amigos() {
+      return this.$store.state.comunidad.amigos
+    }
+  }
 }
 </script>
 
