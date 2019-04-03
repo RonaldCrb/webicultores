@@ -1,3 +1,1 @@
-export const state = () => ({
-  name: 'Webicultores.com'
-})
+export const state = () => ({})
