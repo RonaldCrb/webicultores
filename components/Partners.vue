@@ -13,7 +13,7 @@
         </p>
       </v-flex>
       <v-flex
-        v-for="(amigo, i) in amigos"
+        v-for="(amigo, i) in partners"
         :key="i"
         xs12
         sm6
@@ -49,7 +49,7 @@ export default {
     dialog: false
   }),
   computed: {
-    amigos() {
+    partners() {
       return this.$store.state.comunidad.amigos
     }
   }

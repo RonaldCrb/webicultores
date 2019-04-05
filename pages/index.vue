@@ -20,12 +20,14 @@
         </div>
       </v-flex>
       <v-flex xs12>
+        <AmigosForm />
         <Partners />
       </v-flex>
     </v-layout>
   </div>
 </template>
 <script>
+import AmigosForm from '@/components/AmigosForm.vue'
 import Partners from '@/components/Partners.vue'
 import Bienvenida from '@/components/Bienvenida.vue'
 import PerfilesMobile from '@/components/PerfilesMobile.vue'
@@ -36,6 +38,7 @@ import TarjeteroMobile from '@/components/TarjeteroMobile.vue'
 
 export default {
   components: {
+    AmigosForm,
     Perfiles2,
     PerfilesMobile,
     Partners,
