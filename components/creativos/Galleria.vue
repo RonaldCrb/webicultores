@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import DialogoGaleria from '@/components/DialogoGaleria.vue'
+import DialogoGaleria from '@/components/creativos/DialogoGaleria.vue'
 export default {
   components: {
     DialogoGaleria

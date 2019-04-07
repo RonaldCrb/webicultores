@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import DialogoTarjetero from '@/components/DialogoTarjetero.vue'
+import DialogoTarjetero from '@/components/comunidad/DialogoTarjetero.vue'
 export default {
   components: {
     DialogoTarjetero

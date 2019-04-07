@@ -20,7 +20,7 @@
           >
             <v-icon left>
               send
-            </v-icon>Postea una Noticia
+            </v-icon>Postea un item del timeline
           </v-btn>
           <v-card>
             <v-card-title>
@@ -34,7 +34,7 @@
                 <v-form
                   ref="form"
                   v-model="valid"
-                  @submit.prevent="createAmigo"
+                  @submit.prevent="createTimelineItem"
                 >
                   <v-layout wrap>
                     <v-flex
@@ -42,9 +42,9 @@
                       sm6
                     >
                       <v-text-field
-                        v-model="src"
-                        label="URL imagen"
-                        hint="Introduzca el URL de la imagen (static)"
+                        v-model="icon"
+                        label="icon"
+                        hint="Introduzca el icon (static)"
                       />
                     </v-flex>
                     <v-flex
@@ -58,9 +58,19 @@
                       />
                     </v-flex>
                     <v-text-field
-                      v-model="link"
-                      label="Link"
-                      hint="Introduzca el URL de la pagina oficial de nuestro amigo incluyendo http://paginadelamigo.com"
+                      v-model="color"
+                      label="color"
+                      hint="Introduzca el color de fondo"
+                    />
+                    <v-text-field
+                      v-model="image"
+                      label="image"
+                      hint="Introduzca el image"
+                    />
+                    <v-textarea
+                      v-model="content"
+                      label="contenido"
+                      hint="Introduzca el contenido"
                     />
                   </v-layout>
                 </v-form>
@@ -81,7 +91,7 @@
               <v-btn
                 :disabled="!valid"
                 class="bg"
-                @click.exact="createAmigo"
+                @click.exact="createTimelineItem"
                 @click.native="dialog = false"
               >
                 <v-icon left>
@@ -101,24 +111,29 @@ export default {
   data: () => ({
     dialog: false,
     valid: false,
+    icon: '',
+    color: '',
     title: '',
-    link: '',
-    src: '',
-    preview: ''
+    image: '',
+    content: ''
   }),
   methods: {
     clear() {
-      this.src = ''
+      this.icon = ''
+      this.color = ''
       this.title = ''
-      this.link = ''
+      this.image = ''
+      this.content = ''
     },
-    createAmigo: function() {
+    createTimelineItem: function() {
       const payload = {
-        src: this.src,
+        icon: this.icon,
+        color: this.color,
         title: this.title,
-        link: this.link
+        image: this.image,
+        content: this.content
       }
-      this.$store.dispatch('amigos/createAmigo', payload)
+      this.$store.dispatch('apps/createTimelineItem', payload)
       this.clear()
     }
   }

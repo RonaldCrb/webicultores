@@ -2,12 +2,12 @@ import { db } from '@/plugins/firebase'
 
 export const state = () => ({
   tarjetasComunidad: [],
-  amigos: []
+  partners: []
 })
 
 export const getters = {
   tarjetasComunidad: state => state.tarjetasComunidad,
-  amigos: state => state.amigos
+  partners: state => state.partners
 }
 
 export const mutations = {

@@ -50,7 +50,7 @@ export default {
   }),
   computed: {
     partners() {
-      return this.$store.state.comunidad.amigos
+      return this.$store.state.comunidad.partners
     }
   }
 }

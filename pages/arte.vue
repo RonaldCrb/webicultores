@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import ArteCard from '@/components/ArteCard.vue'
-import Galleria from '@/components/Galleria.vue'
+import ArteCard from '@/components/creativos/ArteCard.vue'
+import Galleria from '@/components/creativos/Galleria.vue'
 export default {
   components: {
     ArteCard,

@@ -81,8 +81,8 @@
 </template>
 
 <script>
-import WebiLogo from '@/components/WebiLogo'
-import SocialButtons from '@/components/SocialButtons.vue'
+import WebiLogo from '@/components/layouts/WebiLogo'
+import SocialButtons from '@/components/layouts/SocialButtons.vue'
 export default {
   components: {
     WebiLogo,

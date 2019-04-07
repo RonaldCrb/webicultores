@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
-import WebiFooter from '@/components/WebiFooter.vue'
+import NavBar from '@/components/layouts/NavBar'
+import WebiFooter from '@/components/layouts/WebiFooter.vue'
 
 export default {
   components: {

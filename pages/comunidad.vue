@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import TarjetaComunidadForm from '@/components/TarjetaComunidadForm.vue'
-import ComandoUltimateParallax from '@/components/ComandoUltimateParallax.vue'
-import ComandoUltimateTarjetero from '@/components/ComandoUltimateTarjetero.vue'
-import Perfiles2 from '@/components/Perfiles2.vue'
+import TarjetaComunidadForm from '@/components/comunidad/TarjetaComunidadForm.vue'
+import ComandoUltimateParallax from '@/components/comunidad/ComandoUltimateParallax.vue'
+import ComandoUltimateTarjetero from '@/components/comunidad/ComandoUltimateTarjetero.vue'
+import Perfiles2 from '@/components/comunidad/Perfiles2.vue'
 
 export default {
   components: {

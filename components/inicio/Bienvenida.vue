@@ -18,9 +18,6 @@
           <v-card dark>
             <v-card-title primary-title>
               <v-flex>
-                <h1 class="py-1 centro titulo">
-                  SERVICIO DE INTEGRACION DE MARKETING DIGITAL
-                </h1>
                 <p class="webicultura">
                   La webicultura es un concepto que desarrollamos y practicamos
                   todos los dias, y lo definimos como el proceso diario de resolver
