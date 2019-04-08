@@ -33,7 +33,7 @@
             />
             <v-card-text>
               <span class="links">
-                {{ amigo.titulo }}
+                {{ amigo.title }}
               </span>
             </v-card-text>
           </a>
@@ -70,7 +70,7 @@ export default {
 }
 .fotos {
   box-shadow: 0 0 8px solid red;
-  transform: scale(0.5);
+  transform: scale(0.8);
   display: block;
   margin-top: 50px;
   margin-left: auto;

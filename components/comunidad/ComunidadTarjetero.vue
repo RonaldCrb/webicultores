@@ -20,7 +20,11 @@
                   </p>
                 </v-card-text>
                 <v-card-actions>
-                  <DialogoTarjetero />
+                  <DialogoTarjetero
+                    :src="card.src"
+                    :title="card.title"
+                    :content="card.content"
+                  />
                 </v-card-actions>
               </v-flex>
             </v-layout>

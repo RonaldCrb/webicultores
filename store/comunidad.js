@@ -2,7 +2,28 @@ import { db } from '@/plugins/firebase'
 
 export const state = () => ({
   tarjetasComunidad: [],
-  partners: []
+  partners: [
+    {
+      link: 'https://lit-springs-89652.herokuapp.com/',
+      src: 'amigos/VaperAnaco.png',
+      title: 'Vaper Anaco'
+    },
+    {
+      link: 'https://lit-chamber-21738.herokuapp.com/',
+      src: 'amigos/piña.png',
+      title: 'RVH'
+    },
+    {
+      link: '',
+      src: 'amigos/CDlogs.png',
+      title: 'CDlogs'
+    },
+    {
+      link: 'https://dry-falls-24813.herokuapp.com/',
+      src: 'amigos/avioncito.png',
+      title: 'Envios Ya!'
+    }
+  ]
 })
 
 export const getters = {
