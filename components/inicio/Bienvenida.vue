@@ -28,6 +28,9 @@
             </v-card-title>
             <v-card-text class="centro">
               <v-flex xs12 sm8 offset-sm2>
+                <h3 class="centro titulo2">
+                  Como lo hacemos?
+                </h3>
                 <ul>
                   <li class="mision">
                     Identificamos los puntos de contacto entre tus productos y tus clientes
@@ -80,6 +83,12 @@ export default {}
   font-weight: bolder;
   /* background-color: black; */
 }
+.titulo2 {
+  font-size: 2em;
+  text-shadow: 2px 2px #5f2ae4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 .mision {
   font-size: 1.4em;
 }
@@ -97,7 +106,7 @@ export default {}
   border-radius: 50%;
   transition: 0.8s 0.2s;
   border: 3px solid #ff0375;
-  box-shadow: 0 0 4px #5f2ae4;
+  box-shadow: 0 0 2px #5f2ae4;
 }
 .bg {
   background-image: linear-gradient(45deg, #ff0375, #5f2ae4, #04bbff);

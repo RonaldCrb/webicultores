@@ -5,7 +5,7 @@ const errorConfig = {
   showConfirmButton: false,
   grow: true,
   timer: 3000,
-  background: '#fff',
+  background: '#424242',
   position: 'center'
 }
 
@@ -16,9 +16,21 @@ const successConfig = {
   showConfirmButton: false,
   grow: true,
   timer: 1500,
-  background: '#fff',
+  background: '#424242',
   backdrop: false,
   position: 'center'
 }
 
 export const success = Swal.mixin(successConfig)
+
+const millanConfig = {
+  type: 'success',
+  showConfirmButton: false,
+  grow: true,
+  timer: 1500,
+  background: '#fff',
+  backdrop: false,
+  position: 'center'
+}
+
+export const millan = Swal.mixin(millanConfig)

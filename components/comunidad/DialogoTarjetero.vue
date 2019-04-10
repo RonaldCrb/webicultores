@@ -8,7 +8,7 @@
       </template>
       <v-card>
         <v-card-title>
-          <img :src="src" :alt="title">
+          <img class="foto" :src="src" :alt="title">
         </v-card-title>
         <v-card-text>
           <h1>{{ title }}</h1>
@@ -17,7 +17,7 @@
         <v-card-text />
         <v-card-actions>
           <v-spacer />
-          <v-btn color="green darken-1" flat="flat" @click="dialog = false">
+          <v-btn class="boton" color="#ff0375" @click="dialog = false">
             atras
           </v-btn>
         </v-card-actions>
@@ -49,3 +49,13 @@ export default {
   }
 }
 </script>
+<style scoped>
+.boton {
+  height: 50px;
+  width: 300px;
+}
+.foto {
+  width: 100%;
+  height: auto;
+}
+</style>

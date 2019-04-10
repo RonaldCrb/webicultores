@@ -1,24 +1,19 @@
 <template>
   <div>
     <v-container fluid>
-      <v-layout column>
-        <v-flex v-for="card in tarjetasComunidad" :key="card.title" xs12 py-1>
+      <v-layout column align-center justify-center>
+        <v-flex v-for="(card, i) in tarjetasComunidad" :key="i" xs12 py-4>
           <v-card class="tarjetas">
             <v-layout row wrap>
-              <v-flex xs12 sm6>
+              <v-flex xs12>
                 <img class="fotos" :src="card.src">
               </v-flex>
-              <v-flex xs12 sm6>
+              <v-flex xs12>
                 <v-card-title primary-title>
                   <p class="titulo">
                     {{ card.title }}
                   </p>
                 </v-card-title>
-                <v-card-text class="ma-1">
-                  <p class="contenido">
-                    {{ card.content }}
-                  </p>
-                </v-card-text>
                 <v-card-actions>
                   <DialogoTarjetero
                     :src="card.src"
@@ -53,8 +48,11 @@ export default {
 .fotos {
   width: 100%;
   height: auto;
+  max-height: 800px;
 }
 .tarjetas {
+  max-width: 1000px;
+  justify-content: center;
 }
 .american {
   color: blue;
@@ -64,7 +62,8 @@ export default {
   padding: 10px;
 }
 .titulo {
-  padding: 40px;
-  font-size: 4em;
+  padding: 20px;
+  font-size: 2em;
+  text-align: center;
 }
 </style>

@@ -1,4 +1,5 @@
-// import axios from 'axios'
+// import { success, error } from '@/plugins/swal'
+// import { db } from '@/plugins/firebase'
 
 export const state = () => ({
   coleccion: [
