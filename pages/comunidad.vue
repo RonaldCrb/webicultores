@@ -13,13 +13,13 @@
       </v-container>
     </div>
     <div class="hidden-sm-and-up">
-            <PerfilesMobile />
-        <v-layout row wrap>
-          <v-flex xs12>
-            <ComunidadTarjetero />
-            <TarjetaComunidadForm />
-          </v-flex>
-        </v-layout>
+      <PerfilesMobile />
+      <v-layout row wrap>
+        <v-flex xs12>
+          <ComunidadTarjetero />
+          <TarjetaComunidadForm />
+        </v-flex>
+      </v-layout>
     </div>
   </div>
 </template>
