@@ -18,11 +18,9 @@
             <v-card-title>
               <v-flex>
                 <p class="webicultura">
-                  La webicultura es un concepto que desarrollamos y practicamos
-                  todos los dias, y lo definimos como el proceso diario de resolver
-                  problemas de forma creativa. En este concepto se mezclan el arte
-                  con la ciencia, la ingenieria con la artesania, la realidad con la
-                  creatividad
+                 Llevamos paso a paso la integración de tu emprendimiento 
+                 o proyecto a lo profundo del marketing digital, el arte y 
+                 la creacion de contenido y las aplicaciones web y mobiles
                 </p>
               </v-flex>
             </v-card-title>

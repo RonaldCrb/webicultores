@@ -30,7 +30,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#ff0375' },
+  loading: { color: '#ff0375', height: '10px', duration: 5000 },
 
   /*
    ** Global CSS
@@ -41,8 +41,11 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '@/plugins/firebase', // BaaS Provider
-    '@/plugins/vuetify' // UI Components
+    '@/plugins/firebase', // BaaS Provider firebase
+    '@/plugins/vuetify', // UI Components vuetify
+    '@/plugins/swal', // Notificaciones Sweetalert2
+    '@/plugins/date-filter', // Filtro de formato de fechas
+    '@/plugins/core-components' // registro global de componentes
   ],
 
   /*

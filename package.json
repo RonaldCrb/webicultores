@@ -1,8 +1,8 @@
 {
-  "name": "Webicultores.com",
+  "name": "WEBICULTORES",
   "version": "1.0.0",
-  "description": "App oficial de Webicultores.com, agrupacion de artistas y desarrolladores Web, con el objetivo de ofrecer nuestros talentos en el mundo digital.",
-  "author": "Ron Alonzo + Jose Millan",
+  "description": "SERVICIO DE INTEGRACION DE MARKETING DIGITAL, llevamos paso a paso la integración de tu emprendimiento o proyecto a lo profundo del marketing digital, App, programas, sistemas integrados de visualización y control",
+  "author": "www.webicultores.com",
   "private": true,
   "scripts": {
     "dev": "nuxt",

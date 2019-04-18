@@ -19,7 +19,7 @@
           fill-height
         >
           <nuxt-link :to="card.link">
-            <v-card dark>
+            <v-card flat dark>
               <v-img class="foto" :src="`${card.icon}`" :hint="card.content" />
               <v-card-title primary-title>
                 <v-container>
