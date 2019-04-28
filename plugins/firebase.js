@@ -5,12 +5,12 @@ import 'firebase/auth'
 
 if (!firebase.apps.length) {
   const config = {
-    apiKey: 'AIzaSyCpyrHkDo5nwZNp3TeMogW82FXxy4AIfZA',
-    authDomain: 'ssr-webicultores.firebaseapp.com',
-    databaseURL: 'https://ssr-webicultores.firebaseio.com',
-    projectId: 'ssr-webicultores',
-    storageBucket: 'ssr-webicultores.appspot.com',
-    messagingSenderId: '125769161612'
+    apiKey: process.env.fbAPIkey,
+    authDomain: process.env.authDomain,
+    databaseURL: process.env.databaseURL,
+    projectId: process.env.projectId,
+    storageBucket: process.env.storageBucket,
+    messagingSenderId: process.envmessagingSenderId
   }
   firebase.initializeApp(config)
 }

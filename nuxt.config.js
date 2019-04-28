@@ -62,7 +62,14 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
+  env: {
+    apiKey: 'AIzaSyCpyrHkDo5nwZNp3TeMogW82FXxy4AIfZA',
+    authDomain: 'ssr-webicultores.firebaseapp.com',
+    databaseURL: 'https://ssr-webicultores.firebaseio.com',
+    projectId: 'ssr-webicultores',
+    storageBucket: 'ssr-webicultores.appspot.com',
+    messagingSenderId: '125769161612'
+  },
   /*
    ** Build configuration
    */
